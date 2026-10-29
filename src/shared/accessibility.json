@@ -1,0 +1,168 @@
+{
+  "features": {
+    "A": {
+      "name": {
+        "fr": "Accompagnant bienvenu",
+        "en": "Caretaker welcome"
+      },
+      "description": {
+        "fr": "Venez avec votre accompagnant pour vous assister",
+        "en": "Come with your caretaker to assist you"
+      },
+      "icon": "A.png",
+      "target_groups": ["visually_impaired"]
+    },
+    "B": {
+      "name": {
+        "fr": "Bruyant",
+        "en": "Noisy"
+      },
+      "description": {
+        "fr": "Plus bruyant que les couloirs de la convention",
+        "en": "Noisier than the festival main areas"
+      },
+      "icon": "B.png",
+      "target_groups": ["neurodivergent"]
+    },
+    "BM": {
+      "name": {
+        "fr": "Boucle magnétique",
+        "en": "Magnetic loop"
+      },
+      "description": {
+        "fr": "Boucle magnétique disponible",
+        "en": "Magnetic loop available"
+      },
+      "icon": "BM.png",
+      "target_groups": ["hearing_impaired"]
+    },
+    "D": {
+      "name": {
+        "fr": "Documentation disponible",
+        "en": "Documentation available"
+      },
+      "description": {
+        "fr": "Une documentation écrite est mise à disposition (recette, règles de jeu, ...)",
+        "en": "A written documentation is available (recipe, game rules, ...)"
+      },
+      "icon": "D.png",
+      "target_groups": ["hearing_impaired"]
+    },
+    "L": {
+      "name": {
+        "fr": "Luminosité inhabituelle",
+        "en": "Unusual luminosity"
+      },
+      "description": {
+        "fr": "La salle peut être plus sombre ou plus lumineuse que le reste de la convention, avec des lumières colorées ou mouvantes",
+        "en": "The room may be darker or brighter than the rest of the convention, with colored or moving lights"
+      },
+      "icon": "L.png",
+      "target_groups": ["neurodivergent", "visually_impaired"]
+    },
+    "MA": {
+      "name": {
+        "fr": "Matériel adapté à une vision réduite",
+        "en": "Material suitable to visual impairments"
+      },
+      "description": {
+        "fr": "Certains objets mis à disposition proposent par exemple une information tactile pour aider à la compréhension d'une information visuelle (dés aux points en relief, ...)",
+        "en": "Some provided objects offer tactile information to help understanding a visual information (dices with dots in relief, ...)"
+      },
+      "icon": "MA.png",
+      "target_groups": ["visually_impaired"]
+    },
+    "O": {
+      "name": {
+        "fr": "Odeurs fortes",
+        "en": "Strong scents"
+      },
+      "description": {
+        "fr": "Une partie plus ou moins importante de l'expérience proposée repose sur une odeur. Selon votre sensibilité, celle-ci peut toujours être perceptible dans les activités suivantes.",
+        "en": "Part of the offered experience relies on a scent. Depending on your sensitivity, it may still be perceptible in the activities following it."
+      },
+      "icon": "O.png",
+      "target_groups": ["neurodivergent"]
+    },
+    "Q": {
+      "name": {
+        "fr": "Silencieux",
+        "en": "Quiet"
+      },
+      "description": {
+        "fr": "La salle doit rester plus calme que le reste de la convention",
+        "en": "The room needs to stay quieter than the corridors or other rooms"
+      },
+      "icon": "Q.png",
+      "target_groups": []
+    },
+    "QR": {
+      "name": {
+        "fr": "QR-Codes",
+        "en": "QR-Codes"
+      },
+      "description": {
+        "fr": "Des QR-codes seront à disposition pour accéder à une version électronique du texte",
+        "en": "QR-Codes will be made available to access an electronic version of the text"
+      },
+      "icon": "QR.png",
+      "target_groups": ["neurodivergent"]
+    },
+    "S": {
+      "name": {
+        "fr": "Staff aidant",
+        "en": "Helper staff"
+      },
+      "description": {
+        "fr": "Annoncez-vous à l'activité ou à l'accueil pour bénéficier de l'aide d'une personne pour participer.",
+        "en": "Make yourself known at the reception or at the activity to benefit from the help of a staff to participate."
+      },
+      "icon": "S.png",
+      "target_groups": ["neurodivergent", "visually_impaired", "hearing_impaired"]
+    },
+    "ST": {
+      "name": {
+        "fr": "Sous titres",
+        "en": "Closed captioning (in French)"
+      },
+      "description": {
+        "fr": "Des sous titres sont disponibles pour cette activité.",
+        "en": "Closed captions (in French) are available for this activity."
+      },
+      "icon": "ST.png",
+      "target_groups": ["hearing_impaired"]
+    },
+    "T": {
+      "name": {
+        "fr": "Proximité",
+        "en": "Proximity"
+      },
+      "description": {
+        "fr": "Cette activité vous amènera à être en proximité directe avec les autres participants",
+        "en": "This activity will bring you into close proximity with the other participants"
+      },
+      "icon": "T.png",
+      "target_groups": ["neurodivergent"]
+    }
+  },
+  "groups": {
+    "hearing_impaired": {
+      "name": {
+        "fr": "Malentendant",
+        "en": "Hearing impaired"
+      }
+    },
+    "neurodivergent": {
+      "name": {
+        "fr": "Neurodivergent",
+        "en": "Neurodivergent"
+      }
+    },
+    "visually_impaired": {
+      "name": {
+        "fr": "Malvoyant",
+        "en": "Visually impaired"
+      }
+    }
+  }
+}

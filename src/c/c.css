@@ -1,0 +1,11 @@
+/* Mise en page uniquement : le style des éléments vient de shared/ui.css */
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 var(--space-4); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+svg.ic { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.stack { display: grid; gap: var(--space-4); justify-items: start; }
+/* le carrousel ne doit pas élargir la grille (débordement horizontal à 375 px) */
+main > *, .stack > * { min-width: 0; max-width: 100%; }
+.row { display: flex; gap: var(--space-3); flex-wrap: wrap; align-items: center; }
+.back { display: inline-flex; align-items: center; min-height: 44px; }
+.btn-secondary[aria-pressed='true'] { border-color: var(--text); }
+.plain { list-style: none; margin: 0; padding: 0; }

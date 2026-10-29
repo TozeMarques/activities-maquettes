@@ -1,0 +1,3714 @@
+[
+ {
+  "id": "a-one-records",
+  "title": "A-One Records",
+  "titleEn": "A-One Records",
+  "desc": "Concert Eurobeat",
+  "descEn": "Eurobeat concert",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/a-one.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "a-one-records-dim-1645",
+    "day": "dim",
+    "start": "16:45",
+    "end": "18:00",
+    "room": "Matsuri",
+    "title": null
+   },
+   {
+    "id": "a-one-records-sam-1915",
+    "day": "sam",
+    "start": "19:15",
+    "end": "20:30",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "absolute-frost",
+  "title": "Jeux Musicaux - Absolute Frost",
+  "titleEn": "Music Games - Absolute Frost",
+  "desc": "Jeux Musicaux",
+  "descEn": "Music Games",
+  "type": "jeux",
+  "tags": [],
+  "image": "/invites/absolute_frost.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "absolute-frost-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Edo",
+    "title": null
+   },
+   {
+    "id": "absolute-frost-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Edo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "agence-neurodiversite",
+  "title": "Salle Calme & Silence",
+  "titleEn": "Calm & Silence Room",
+  "desc": "Espace de ressourcement pour la neurodiversité",
+  "descEn": "Respite space for neurodiversity",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/agence_neuro.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "agence-neurodiversite-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Salle Silence",
+    "title": null
+   },
+   {
+    "id": "agence-neurodiversite-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Salle Silence",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "altaya",
+  "title": "Altaya - Le handicap dans le cosplay et en convention",
+  "titleEn": "Altaya - Disability in Cosplay and Conventions",
+  "desc": "Cosplayer avec un handicap",
+  "descEn": "Cosplaying with a Disability",
+  "type": "conference",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/altaya.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "altaya-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "17:30",
+    "room": "Natsu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "armes-lausanne",
+  "title": "Escrime Lausanne",
+  "titleEn": "Escrime Lausanne",
+  "desc": "Sabre Laser Sportif",
+  "descEn": "Competitive Lightsaber",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/escrime_lausanne.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "armes-lausanne-dim-1345",
+    "day": "dim",
+    "start": "13:45",
+    "end": "14:30",
+    "room": "Reiwa",
+    "title": "Cercle des Armes de Lausanne"
+   },
+   {
+    "id": "armes-lausanne-sam-1215",
+    "day": "sam",
+    "start": "12:15",
+    "end": "13:00",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "armes-lausanne-sam-1645",
+    "day": "sam",
+    "start": "16:45",
+    "end": "17:30",
+    "room": "Reiwa",
+    "title": "Cercle des Armes de Lausanne"
+   }
+  ]
+ },
+ {
+  "id": "ars_encens",
+  "title": "Fabrication d'encens japonais",
+  "titleEn": "Incense Making Workshop",
+  "desc": "Fabriquez votre propre encens japonais",
+  "descEn": "Make your own Japanese incense",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/ars_encens.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "ars_encens-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "E09",
+    "title": null
+   },
+   {
+    "id": "ars_encens-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "E09",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "artelier-3d",
+  "title": "Customisation animaux en 3D",
+  "titleEn": "3D Animal Customization",
+  "desc": "Atelier figurines 3D",
+  "descEn": "3D Animal Customization workshop",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/artelier-3d.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "artelier-3d-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "12:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-3d-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-3d-sam-1100",
+    "day": "sam",
+    "start": "11:00",
+    "end": "12:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-3d-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Kobe",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "artelier-continu",
+  "title": "Bracelets Kumihimo",
+  "titleEn": "Kumihimo Bracelets",
+  "desc": "Atelier masques et bracelets",
+  "descEn": "Mask and bracelet workshop",
+  "type": "continu",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/artelier.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "artelier-continu-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "18:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-continu-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "20:00",
+    "room": "Kobe",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "artelier",
+  "title": "Peinture de masques Kitsune et Bracelets Kumihimo",
+  "titleEn": "Kitsune Mask Painting and Kumihimo Bracelets",
+  "desc": "Atelier masques et bracelets",
+  "descEn": "Mask and bracelet workshop",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/artelier.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "artelier-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "11:50",
+    "room": "Kobe",
+    "title": "Masques Kitsune/Nekko"
+   },
+   {
+    "id": "artelier-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "14:50",
+    "room": "Kobe",
+    "title": "Masques Kitsune/Nekko"
+   },
+   {
+    "id": "artelier-dim-1530",
+    "day": "dim",
+    "start": "15:30",
+    "end": "16:20",
+    "room": "Kobe",
+    "title": "Masques Kitsune/Nekko"
+   },
+   {
+    "id": "artelier-dim-1700",
+    "day": "dim",
+    "start": "17:00",
+    "end": "17:50",
+    "room": "Kobe",
+    "title": "Masques Kitsune/Nekko"
+   },
+   {
+    "id": "artelier-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "11:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-sam-1200",
+    "day": "sam",
+    "start": "12:00",
+    "end": "13:00",
+    "room": "Kobe",
+    "title": null
+   },
+   {
+    "id": "artelier-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "20:00",
+    "room": "Kobe",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "aux-mille-pins",
+  "title": "Causerie et dégustation 'Oideyasu おいでやす – Osaka Tea Time'",
+  "titleEn": "Chit-chat and tastings \\\"Oideyasu おいでやす – Osaka Tea Time\\\"",
+  "desc": "Thés japonais et douceurs en kimono",
+  "descEn": "Japanese teas and sweets in kimono",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/aux_mille_pins.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "aux-mille-pins-dim-1045",
+    "day": "dim",
+    "start": "10:45",
+    "end": "11:15",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "aux-mille-pins-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "14:30",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "aux-mille-pins-sam-1045",
+    "day": "sam",
+    "start": "10:45",
+    "end": "11:15",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "aux-mille-pins-sam-1445",
+    "day": "sam",
+    "start": "14:45",
+    "end": "15:15",
+    "room": "Haru",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "bojagi",
+  "title": "Bojagi - Emballage coréen",
+  "titleEn": "Bojagi – Korean Wrapping",
+  "desc": "Art traditionnel coréen d'emballage",
+  "descEn": "Traditional Korean wrapping art",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/Bojagi.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "bojagi-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:30",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "bojagi-sam-1315",
+    "day": "sam",
+    "start": "13:15",
+    "end": "14:15",
+    "room": "Haru",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "budoshin",
+  "title": "Budoshin Aiki Ryu",
+  "titleEn": "Budoshin Aiki Ryu",
+  "desc": "Présentation de l’Aïkitaï Jutsu",
+  "descEn": "Introduction to Aïkitaï Jutsu",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/budoshin.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "budoshin-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "13:45",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "budoshin-dim-1515",
+    "day": "dim",
+    "start": "15:15",
+    "end": "16:00",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "budoshin-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "16:45",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "chainsaw-man",
+  "title": "Chainsaw Man, le film - L'Arc de Reze",
+  "titleEn": "Chainsaw Man: The Movie - Reze Arc",
+  "desc": "Projection - Chainsaw Man, le film - L'Arc de Reze",
+  "descEn": "Screening - Chainsaw Man: The Movie - Reze Arc",
+  "type": "projection",
+  "tags": [],
+  "image": "/invites/csm-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "chainsaw-man-sam-1630",
+    "day": "sam",
+    "start": "16:30",
+    "end": "18:30",
+    "room": "Fuyu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "chocopoly",
+  "title": "Chocothèque",
+  "titleEn": "Chocothèque",
+  "desc": "Pause chocolatée et réconfortante",
+  "descEn": "Tasty and comforting chocolate break",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/chocopoly.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "chocopoly-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Okinawa",
+    "title": null
+   },
+   {
+    "id": "chocopoly-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Okinawa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "concours-cosplay",
+  "title": "Concours Cosplay – fait main",
+  "titleEn": "Cosplay Contest - handmade",
+  "desc": "Compétition cosplay",
+  "descEn": "Cosplay contest",
+  "type": "concours",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/concours-cosplay.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "concours-cosplay-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "15:00",
+    "room": "Rolex",
+    "title": "Concours Cosplay – performance"
+   },
+   {
+    "id": "concours-cosplay-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "15:00",
+    "room": "Sakura",
+    "title": "Rediffusion du concours cosplay – performance"
+   },
+   {
+    "id": "concours-cosplay-dim-1700",
+    "day": "dim",
+    "start": "17:00",
+    "end": "17:30",
+    "room": "Sakura",
+    "title": "Cérémonie de remise des prix – performance"
+   },
+   {
+    "id": "concours-cosplay-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "15:00",
+    "room": "Rolex",
+    "title": null
+   },
+   {
+    "id": "concours-cosplay-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "15:00",
+    "room": "Sakura",
+    "title": "Rediffusion du concours cosplay – fait main"
+   },
+   {
+    "id": "concours-cosplay-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:00",
+    "room": "Natsu",
+    "title": "Cérémonie de remise des prix du concours cosplay – fait main"
+   }
+  ]
+ },
+ {
+  "id": "concours-idol",
+  "title": "Concours Idol solo",
+  "titleEn": "Solo Idol Contest",
+  "desc": "Compétition de danse",
+  "descEn": "Dance competition",
+  "type": "concours",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/concours-idol.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "concours-idol-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:15",
+    "room": "Taiyo",
+    "title": "Concours Idol en groupe"
+   },
+   {
+    "id": "concours-idol-sam-1700",
+    "day": "sam",
+    "start": "17:00",
+    "end": "18:45",
+    "room": "Taiyo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "consulat-sakai",
+  "title": "Démonstration d'affûtage de couteaux japonais",
+  "titleEn": "Japanese Knife Sharpening Demonstration",
+  "desc": "Art de l'aiguisage des couteaux de Sakai",
+  "descEn": "Art of sharpening Sakai knives",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/consulat_sakai.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "consulat-sakai-sam-1515",
+    "day": "sam",
+    "start": "15:15",
+    "end": "17:15",
+    "room": "Kitsune",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "cordebart",
+  "title": "Participez à une fresque collective !",
+  "titleEn": "Create a mural together !",
+  "desc": "Fresque collaborative",
+  "descEn": "Collaborative mural drawing",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/cordebart.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "cordebart-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "E25",
+    "title": null
+   },
+   {
+    "id": "cordebart-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "E25",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "cours-de-japonais",
+  "title": "Se présenter en Japonais",
+  "titleEn": "Introducing yourself in Japanese",
+  "desc": "Animaux, présentations et phrases de voyage",
+  "descEn": "Animals, introductions and travel phrases",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/cours-jp.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "cours-de-japonais-dim-1145",
+    "day": "dim",
+    "start": "11:45",
+    "end": "12:45",
+    "room": "Usagi",
+    "title": "Les animaux du Japon"
+   },
+   {
+    "id": "cours-de-japonais-dim-1445",
+    "day": "dim",
+    "start": "14:45",
+    "end": "15:45",
+    "room": "Usagi",
+    "title": "Préparer son voyage au Japon"
+   },
+   {
+    "id": "cours-de-japonais-sam-1115",
+    "day": "sam",
+    "start": "11:15",
+    "end": "12:15",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "cours-de-japonais-sam-1415",
+    "day": "sam",
+    "start": "14:15",
+    "end": "15:15",
+    "room": "Usagi",
+    "title": "Les animaux du Japon"
+   },
+   {
+    "id": "cours-de-japonais-sam-1715",
+    "day": "sam",
+    "start": "17:15",
+    "end": "18:15",
+    "room": "Usagi",
+    "title": "Préparer son voyage au Japon"
+   }
+  ]
+ },
+ {
+  "id": "cyril-coppini",
+  "title": "Les animaux du Rakugo",
+  "titleEn": "Animals in Rakugo",
+  "desc": "Performance Rakugo",
+  "descEn": "Rakugo performance",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/cyril.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "cyril-coppini-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Osaka",
+    "title": "La traduction de manga"
+   },
+   {
+    "id": "cyril-coppini-sam-1215",
+    "day": "sam",
+    "start": "12:15",
+    "end": "13:15",
+    "room": "Tokyo",
+    "title": null
+   },
+   {
+    "id": "cyril-coppini-sam-1800",
+    "day": "sam",
+    "start": "18:00",
+    "end": "19:15",
+    "room": "Tokyo",
+    "title": "Spectacle de Rakugo"
+   }
+  ]
+ },
+ {
+  "id": "elaa",
+  "title": "ELAA",
+  "titleEn": "ELAA",
+  "desc": "Combats de Spectacle et Initiation",
+  "descEn": "Spectacular fights and initiations",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/elaa_logo.png",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "elaa-dim-1645",
+    "day": "dim",
+    "start": "16:45",
+    "end": "17:30",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "elaa-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "15:15",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "elaa-sam-1900",
+    "day": "sam",
+    "start": "19:00",
+    "end": "19:45",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "emma-obadina",
+  "title": "Dango mochis aux champignons - Emma Obadina",
+  "titleEn": "Mushroom dango mochi - Emma Obadina",
+  "desc": "Pâtisserie et cuisine japonaises",
+  "descEn": "Japanese pastry and cuisine",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/emma-obadina-carre.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "emma-obadina-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "11:15",
+    "room": "Monaka",
+    "title": "Mochis aux herbes fraîches - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Monaka",
+    "title": "Matcha nama choco - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-dim-1230",
+    "day": "dim",
+    "start": "12:30",
+    "end": "13:15",
+    "room": "Monaka",
+    "title": "Tempeh coco prunes saumuré - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Monaka",
+    "title": "Dango mochi aux hojicha - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-dim-1515",
+    "day": "dim",
+    "start": "15:15",
+    "end": "16:15",
+    "room": "Monaka",
+    "title": "Dango mochi caramélisé au chalumeau - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-dim-1645",
+    "day": "dim",
+    "start": "16:45",
+    "end": "17:45",
+    "room": "Monaka",
+    "title": "Daifuku mochi 'Balade en forêt nippone' - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "11:15",
+    "room": "Monaka",
+    "title": null
+   },
+   {
+    "id": "emma-obadina-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Monaka",
+    "title": "Daikon mochis - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1230",
+    "day": "sam",
+    "start": "12:30",
+    "end": "13:15",
+    "room": "Monaka",
+    "title": "Poulet sauce yakiniku - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1415",
+    "day": "sam",
+    "start": "14:15",
+    "end": "15:15",
+    "room": "Monaka",
+    "title": "Tempeh coco Yuzu - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1530",
+    "day": "sam",
+    "start": "15:30",
+    "end": "16:30",
+    "room": "Monaka",
+    "title": "Nama chocolat - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1700",
+    "day": "sam",
+    "start": "17:00",
+    "end": "18:00",
+    "room": "Monaka",
+    "title": "Daifuku mochi - Emma Obadina"
+   },
+   {
+    "id": "emma-obadina-sam-1815",
+    "day": "sam",
+    "start": "18:15",
+    "end": "19:15",
+    "room": "Monaka",
+    "title": "Atelier de cuisine - Emma Obadina"
+   }
+  ]
+ },
+ {
+  "id": "expo_photo",
+  "title": "Expo Photo - Un voyage au Japon",
+  "titleEn": "Photo Exhibition - A Journey Through Japan",
+  "desc": "Photographies et haïkus",
+  "descEn": "Photographs and haikus",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/expo_photo.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "expo_photo-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Shiki",
+    "title": null
+   },
+   {
+    "id": "expo_photo-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Shiki",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "fondation-baur",
+  "title": "Fondation Baur - Stand arts japonais",
+  "titleEn": "Fondation Baur - Japanese art booth",
+  "desc": "Jeu des animaux cachés et boutique",
+  "descEn": "Hidden animals game and shop",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/fondation_baur.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "fondation-baur-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "J11",
+    "title": null
+   },
+   {
+    "id": "fondation-baur-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "J11",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "foodex",
+  "title": "Sake - Découverte et dégustation par Foodex",
+  "titleEn": "Sake - Discovery and Tasting by Foodex",
+  "desc": "Du riz au verre",
+  "descEn": "From rice to glass",
+  "type": "conference",
+  "tags": [],
+  "image": "/sponsors/foodex.png",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "foodex-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Kyoto",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "gaming-federation",
+  "title": "Gaming Federation",
+  "titleEn": "Gaming Federation",
+  "desc": "Espace gaming et tournois",
+  "descEn": "Gaming space and tournaments",
+  "type": "jeux",
+  "tags": [],
+  "image": "/invites/gaming_federation.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "gaming-federation-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Meiji",
+    "title": null
+   },
+   {
+    "id": "gaming-federation-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Sengoku",
+    "title": null
+   },
+   {
+    "id": "gaming-federation-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Roko",
+    "title": "Tournois de Jeux-vidéo"
+   },
+   {
+    "id": "gaming-federation-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Sengoku",
+    "title": null
+   },
+   {
+    "id": "gaming-federation-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Roko",
+    "title": "Tournois de Jeux-vidéo"
+   },
+   {
+    "id": "gaming-federation-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Meiji",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "go",
+  "title": "Jeu de Go",
+  "titleEn": "Go game",
+  "desc": "Jeu traditionnel ancien",
+  "descEn": "Ancient traditional game",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/go.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "go-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Fukuoka",
+    "title": null
+   },
+   {
+    "id": "go-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Fukuoka",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hanafuda",
+  "title": "Hanafuda",
+  "titleEn": "Hanafuda",
+  "desc": "Jeu de cartes japonais",
+  "descEn": "Japanese card game",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/diane-georges-hanafuda.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "hanafuda-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Nagano",
+    "title": null
+   },
+   {
+    "id": "hanafuda-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Nagano",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hance",
+  "title": "HANCE",
+  "titleEn": "HANCE",
+  "desc": "Fusion musicale japonaise",
+  "descEn": "Japanese music fusion",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/hance.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "hance-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Matsuri",
+    "title": null
+   },
+   {
+    "id": "hance-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "15:15",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hanko-workshop",
+  "title": "Gravure de sceau",
+  "titleEn": "Seal carving",
+  "desc": "Gravure de sceau",
+  "descEn": "Seal carving",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/hanko.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "hanko-workshop-dim-1245",
+    "day": "dim",
+    "start": "12:45",
+    "end": "15:00",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "hanko-workshop-dim-1515",
+    "day": "dim",
+    "start": "15:15",
+    "end": "17:30",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "hanko-workshop-sam-1015",
+    "day": "sam",
+    "start": "10:15",
+    "end": "12:15",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "hanko-workshop-sam-1230",
+    "day": "sam",
+    "start": "12:30",
+    "end": "14:30",
+    "room": "Myoga",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "herjia",
+  "title": "Devenir Mangaka en France",
+  "titleEn": "Becoming a Mangaka in France",
+  "desc": "Conférence sur le métier de mangaka",
+  "descEn": "Conference on the mangaka profession",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/herjia.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "herjia-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Kyoto",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hinajapon",
+  "title": "Hinajapon - La culture suisse vue par une Japonaise",
+  "titleEn": "Hinajapon - Swiss Culture Through a Japanese Perspective",
+  "desc": "Culture suisse vue par une Japonaise",
+  "descEn": "Swiss culture through a Japanese perspective",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/hinajapon.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "hinajapon-dim-1200",
+    "day": "dim",
+    "start": "12:00",
+    "end": "13:00",
+    "room": "Osaka",
+    "title": "Hinajapon - Les charmes de la Suisse selon une Japonaise"
+   },
+   {
+    "id": "hinajapon-sam-1345",
+    "day": "sam",
+    "start": "13:45",
+    "end": "14:30",
+    "room": "Osaka",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hoishi_ochikobore",
+  "title": "Hoishi Aina & Ochikobore",
+  "titleEn": "Hoishi Aina & Ochikobore",
+  "desc": "VTuber idol alien et musique live",
+  "descEn": "Alien idol VTuber and live music",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/hoishi_ochiko.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "hoishi_ochikobore-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "iarumas",
+  "title": "Iarumas",
+  "titleEn": "Iarumas",
+  "desc": "Club d'arts martiaux pluridisciplinaire",
+  "descEn": "Multidisciplinary martial arts club",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/IARUMAS.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "iarumas-dim-1215",
+    "day": "dim",
+    "start": "12:15",
+    "end": "13:00",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "iarumas-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "16:45",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "iarumas-sam-1515",
+    "day": "sam",
+    "start": "15:15",
+    "end": "16:00",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "idream",
+  "title": "Show danse iDream",
+  "titleEn": "Danse show iDream",
+  "desc": "Groupe de danse",
+  "descEn": "Dance cover crew",
+  "type": "concours",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/idream-carre.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "idream-sam-1630",
+    "day": "sam",
+    "start": "16:30",
+    "end": "16:45",
+    "room": "Taiyo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "ironmouse",
+  "title": "Ironmouse - Parcours et FAQ",
+  "titleEn": "Ironmouse - Journey and Q&A",
+  "desc": "Rencontre virtuelle avec la VTuber Ironmouse",
+  "descEn": "Virtual meeting with VTuber Ironmouse",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/ironmouse.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "ironmouse-sam-1545",
+    "day": "sam",
+    "start": "15:45",
+    "end": "17:15",
+    "room": "Sakura",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "itsuko-yoshikawa",
+  "title": "Cérémonie du Thé Matcha",
+  "titleEn": "Matcha Tea Ceremony",
+  "desc": "Cérémonie du thé, encens, kimono",
+  "descEn": "Tea ceremony, incense, kimono",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/itsuko.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "itsuko-yoshikawa-dim-1230",
+    "day": "dim",
+    "start": "12:30",
+    "end": "14:00",
+    "room": "Tsubaki",
+    "title": null
+   },
+   {
+    "id": "itsuko-yoshikawa-dim-1430",
+    "day": "dim",
+    "start": "14:30",
+    "end": "15:30",
+    "room": "Tsubaki",
+    "title": "Cérémonie de l'encens"
+   },
+   {
+    "id": "itsuko-yoshikawa-sam-1230",
+    "day": "sam",
+    "start": "12:30",
+    "end": "14:00",
+    "room": "Tsubaki",
+    "title": null
+   },
+   {
+    "id": "itsuko-yoshikawa-sam-1530",
+    "day": "sam",
+    "start": "15:30",
+    "end": "16:30",
+    "room": "Tsubaki",
+    "title": "Cérémonie de l'encens"
+   }
+  ]
+ },
+ {
+  "id": "itsuko-yoshikawa-kimono",
+  "title": "Port du kimono (4 femmes + 2 hommes)",
+  "titleEn": "Kimono Wearing (4 women + 2 men)",
+  "desc": "Cérémonie du thé, encens, kimono",
+  "descEn": "Tea ceremony, incense, kimono",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/itsuko.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "itsuko-yoshikawa-kimono-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:30",
+    "room": "Tsubaki",
+    "title": null
+   },
+   {
+    "id": "itsuko-yoshikawa-kimono-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "19:00",
+    "room": "Tsubaki",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "jdr-poly",
+  "title": "Jeux de rôle",
+  "titleEn": "Tabletop games",
+  "desc": "Jeux de rôle",
+  "descEn": "Role-playing games",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/jdr-poly.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "jdr-poly-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Nagoya",
+    "title": null
+   },
+   {
+    "id": "jdr-poly-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Nagoya",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "just-dance-swiss-club",
+  "title": "Just Dance",
+  "titleEn": "Just Dance",
+  "desc": "Just Dance",
+  "descEn": "Just Dance",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/just-dance-swiss-club.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "just-dance-swiss-club-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "14:00",
+    "room": "Takao",
+    "title": null
+   },
+   {
+    "id": "just-dance-swiss-club-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Takao",
+    "title": "Random Play Just Dance"
+   },
+   {
+    "id": "just-dance-swiss-club-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "18:00",
+    "room": "Takao",
+    "title": null
+   },
+   {
+    "id": "just-dance-swiss-club-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Scène Raï",
+    "title": "Just Dance Géant"
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "14:00",
+    "room": "Takao",
+    "title": null
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Takao",
+    "title": "Random Play Just Dance"
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1500",
+    "day": "sam",
+    "start": "15:00",
+    "end": "18:00",
+    "room": "Takao",
+    "title": null
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1630",
+    "day": "sam",
+    "start": "16:30",
+    "end": "17:30",
+    "room": "Scène Raï",
+    "title": "Just Dance Géant"
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1800",
+    "day": "sam",
+    "start": "18:00",
+    "end": "19:00",
+    "room": "Takao",
+    "title": "Iconique Just Dance"
+   },
+   {
+    "id": "just-dance-swiss-club-sam-1900",
+    "day": "sam",
+    "start": "19:00",
+    "end": "20:00",
+    "room": "Takao",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kabe_atelier",
+  "title": "Kabé",
+  "titleEn": "Kabé",
+  "desc": "Atelier graffiti",
+  "descEn": "Graffiti workshop",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/kabe_atelier.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kabe_atelier-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "12:00",
+    "room": "H40",
+    "title": null
+   },
+   {
+    "id": "kabe_atelier-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "12:00",
+    "room": "H40",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kamishibai",
+  "title": "Ciné-dessiné KAMISHIBAÏ - Tout public dès 6 ans !",
+  "titleEn": "KAMISHIBAI Creation - from 6 years old",
+  "desc": "Création théâtre papier",
+  "descEn": "Paper theatre creation",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/kamishibai.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "kamishibai-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "11:30",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "kamishibai-dim-1315",
+    "day": "dim",
+    "start": "13:15",
+    "end": "14:15",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "kamishibai-dim-1615",
+    "day": "dim",
+    "start": "16:15",
+    "end": "17:15",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "kamishibai-sam-1245",
+    "day": "sam",
+    "start": "12:45",
+    "end": "13:45",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "kamishibai-sam-1545",
+    "day": "sam",
+    "start": "15:45",
+    "end": "16:45",
+    "room": "Usagi",
+    "title": null
+   },
+   {
+    "id": "kamishibai-sam-1830",
+    "day": "sam",
+    "start": "18:30",
+    "end": "19:30",
+    "room": "Usagi",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kamishibai_musee",
+  "title": "Hall-Kamishibaï : lectures et initiation",
+  "titleEn": "Hall-Kamishibai: readings and initiation",
+  "desc": "Théâtre de papier par le Musée des Contes et Récits",
+  "descEn": "Paper theatre presented by the Musée des Contes et Récits",
+  "type": "continu",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/hall_kamishibai.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kamishibai_musee-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "16:00",
+    "room": "Uki",
+    "title": null
+   },
+   {
+    "id": "kamishibai_musee-sam-1100",
+    "day": "sam",
+    "start": "11:00",
+    "end": "18:00",
+    "room": "Uki",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kbird",
+  "title": "Kbird - Rétrogaming",
+  "titleEn": "Kbird - Retrogaming",
+  "desc": "Rétrogaming et tournois Nintendo",
+  "descEn": "Retrogaming and Nintendo tournaments",
+  "type": "jeux",
+  "tags": [],
+  "image": "/invites/kbird.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kbird-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Kbird",
+    "title": null
+   },
+   {
+    "id": "kbird-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Kbird",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kfm",
+  "title": "Cours de Kpop et Animation par KFM",
+  "titleEn": "Kpop Classes and Animation by KFM",
+  "desc": "Cours de Kpop et Animation",
+  "descEn": "Kpop Classes and Animation",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/kfm.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kfm-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "12:00",
+    "room": "Scène Raï",
+    "title": "Kpop - KFM Dance School"
+   },
+   {
+    "id": "kfm-dim-1345",
+    "day": "dim",
+    "start": "13:45",
+    "end": "15:45",
+    "room": "Scène Raï",
+    "title": null
+   },
+   {
+    "id": "kfm-sam-1100",
+    "day": "sam",
+    "start": "11:00",
+    "end": "15:00",
+    "room": "Scène Raï",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kintsugi",
+  "title": "Découvrez le kintsugi",
+  "titleEn": "Discover the Kintsugi",
+  "desc": "Art de la réparation à l'or",
+  "descEn": "Art of golden repair",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/kintsugi.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kintsugi-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:45",
+    "room": "Kitsune",
+    "title": "Découvrez le Kintsugi"
+   },
+   {
+    "id": "kintsugi-sam-1515",
+    "day": "sam",
+    "start": "15:15",
+    "end": "17:00",
+    "room": "Tokyo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kokedama",
+  "title": "Kokedama, sphère de mousse",
+  "titleEn": "Kokedama, moss sphere",
+  "desc": "Pot vivant japonais",
+  "descEn": "Japanese living pot",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/kokedama.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "kokedama-dim-1015",
+    "day": "dim",
+    "start": "10:15",
+    "end": "11:15",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "kokedama-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:30",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "kokedama-sam-1500",
+    "day": "sam",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "kokedama-sam-1615",
+    "day": "sam",
+    "start": "16:15",
+    "end": "17:15",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "kokedama-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:30",
+    "room": "Myoga",
+    "title": null
+   },
+   {
+    "id": "kokedama-sam-1845",
+    "day": "sam",
+    "start": "18:45",
+    "end": "19:45",
+    "room": "Myoga",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kudnalla-atelier",
+  "title": "Initiation à l'acrylique",
+  "titleEn": "Acrylic painting introduction",
+  "desc": "Atelier Peinture Acrylique",
+  "descEn": "Acrylic Painting Workshop",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/kudnalla.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "kudnalla-atelier-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "11:15",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-atelier-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-atelier-dim-1230",
+    "day": "dim",
+    "start": "12:30",
+    "end": "13:15",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-atelier-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "11:15",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-atelier-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-atelier-sam-1230",
+    "day": "sam",
+    "start": "12:30",
+    "end": "13:15",
+    "room": "Sapporo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kudnalla",
+  "title": "Masterclass et live painting",
+  "titleEn": "Masterclass and live painting",
+  "desc": "Venez échanger avec l'artiste Kudnalla en observant son processus créatif.",
+  "descEn": "Chat with artist Kudnalla and observe her creative process.",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/kudnalla.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kudnalla-dim-1330",
+    "day": "dim",
+    "start": "13:30",
+    "end": "17:00",
+    "room": "Sapporo",
+    "title": null
+   },
+   {
+    "id": "kudnalla-sam-1330",
+    "day": "sam",
+    "start": "13:30",
+    "end": "17:00",
+    "room": "Sapporo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "ludopoly",
+  "title": "Jeux de société - Ludopoly",
+  "titleEn": "Board games - Ludopoly",
+  "desc": "Commission de jeux de société de l'EPFL",
+  "descEn": "Board game club of EPFL",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/ludopoly.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "ludopoly-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Kita",
+    "title": null
+   },
+   {
+    "id": "ludopoly-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Kita",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "mahjong",
+  "title": "Mahjong",
+  "titleEn": "Mahjong",
+  "desc": "Jeu traditionnel chinois",
+  "descEn": "Traditional Chinese game",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/mahjong.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "mahjong-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Kaimon",
+    "title": null
+   },
+   {
+    "id": "mahjong-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Kaimon",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "maquillage",
+  "title": "Maquillage, dès 3 ans",
+  "titleEn": "Face-painting, ages 3+",
+  "desc": "Maquillages animaux pour enfants",
+  "descEn": "Animal Face-Painting for children",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/maquillage-i.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "maquillage-sam-1330",
+    "day": "sam",
+    "start": "13:30",
+    "end": "14:00",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "14:30",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "15:00",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1500",
+    "day": "sam",
+    "start": "15:00",
+    "end": "15:30",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1530",
+    "day": "sam",
+    "start": "15:30",
+    "end": "16:00",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "16:30",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1630",
+    "day": "sam",
+    "start": "16:30",
+    "end": "17:00",
+    "room": "Wagashi",
+    "title": null
+   },
+   {
+    "id": "maquillage-sam-1700",
+    "day": "sam",
+    "start": "17:00",
+    "end": "17:30",
+    "room": "Wagashi",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "mayu-shirai",
+  "title": "Jiutamai - Danse Traditionnelle",
+  "titleEn": "Jiutamai - Traditional danse",
+  "desc": "Danse Traditionnelle Jiutamai",
+  "descEn": "Traditional Jiutamai Dance",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/mayu-shirai-carre.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "mayu-shirai-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "11:45",
+    "room": "Daifuku",
+    "title": null
+   },
+   {
+    "id": "mayu-shirai-dim-1230",
+    "day": "dim",
+    "start": "12:30",
+    "end": "13:15",
+    "room": "Daifuku",
+    "title": null
+   },
+   {
+    "id": "mayu-shirai-dim-1515",
+    "day": "dim",
+    "start": "15:15",
+    "end": "16:00",
+    "room": "Daifuku",
+    "title": null
+   },
+   {
+    "id": "mayu-shirai-sam-1415",
+    "day": "sam",
+    "start": "14:15",
+    "end": "15:00",
+    "room": "Daifuku",
+    "title": null
+   },
+   {
+    "id": "mayu-shirai-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "16:45",
+    "room": "Daifuku",
+    "title": null
+   },
+   {
+    "id": "mayu-shirai-sam-1715",
+    "day": "sam",
+    "start": "17:15",
+    "end": "18:00",
+    "room": "Daifuku",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "midnight-blossom",
+  "title": "Kitsuke : Conférence et démonstration",
+  "titleEn": "Kitsuke: Lecture and Demonstration",
+  "desc": "Conférence kimono",
+  "descEn": "Kimono conference",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/midnight-blossom.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "midnight-blossom-dim-1415",
+    "day": "dim",
+    "start": "14:15",
+    "end": "15:30",
+    "room": "Tokyo",
+    "title": "Les défis du kimono : Ecologie, mondialisation et durabilité"
+   },
+   {
+    "id": "midnight-blossom-sam-1315",
+    "day": "sam",
+    "start": "13:15",
+    "end": "14:15",
+    "room": "Kitsune",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "mighty-games",
+  "title": "Initiation Lorcana",
+  "titleEn": "Lorcana Introduction",
+  "desc": "Boutique de jeux et initiations",
+  "descEn": "Game shop and initiations",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/mighty_games.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "mighty-games-dim-1100",
+    "day": "dim",
+    "start": "11:00",
+    "end": "12:00",
+    "room": "Shokudo",
+    "title": null
+   },
+   {
+    "id": "mighty-games-dim-1115",
+    "day": "dim",
+    "start": "11:15",
+    "end": "18:00",
+    "room": "Manju",
+    "title": "Magic: The Gathering"
+   },
+   {
+    "id": "mighty-games-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "13:30",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-dim-1145",
+    "day": "dim",
+    "start": "11:45",
+    "end": "13:15",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "17:00",
+    "room": "Shokudo",
+    "title": "Scellé Lorcana Givresort"
+   },
+   {
+    "id": "mighty-games-dim-1415",
+    "day": "dim",
+    "start": "14:15",
+    "end": "16:15",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-dim-1430",
+    "day": "dim",
+    "start": "14:30",
+    "end": "16:00",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-dim-1645",
+    "day": "dim",
+    "start": "16:45",
+    "end": "18:00",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-dim-1700",
+    "day": "dim",
+    "start": "17:00",
+    "end": "18:00",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-sam-1100",
+    "day": "sam",
+    "start": "11:00",
+    "end": "12:00",
+    "room": "Shokudo",
+    "title": null
+   },
+   {
+    "id": "mighty-games-sam-1115",
+    "day": "sam",
+    "start": "11:15",
+    "end": "13:15",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "13:00",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-sam-1200",
+    "day": "sam",
+    "start": "12:00",
+    "end": "19:00",
+    "room": "Manju",
+    "title": "Store Championship Magic Lorwyn"
+   },
+   {
+    "id": "mighty-games-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Shokudo",
+    "title": null
+   },
+   {
+    "id": "mighty-games-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "16:00",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-sam-1415",
+    "day": "sam",
+    "start": "14:15",
+    "end": "15:45",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "15:30",
+    "room": "Shokudo",
+    "title": null
+   },
+   {
+    "id": "mighty-games-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Shokudo",
+    "title": null
+   },
+   {
+    "id": "mighty-games-sam-1700",
+    "day": "sam",
+    "start": "17:00",
+    "end": "19:00",
+    "room": "J33",
+    "title": "Initiation Donjons & Dragons"
+   },
+   {
+    "id": "mighty-games-sam-1715",
+    "day": "sam",
+    "start": "17:15",
+    "end": "18:45",
+    "room": "J33",
+    "title": "Initiation Kill Team"
+   },
+   {
+    "id": "mighty-games-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:30",
+    "room": "Shokudo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "mitsune",
+  "title": "Mitsune",
+  "titleEn": "Mitsune",
+  "desc": "Groupe fusion japonais",
+  "descEn": "Japanese fusion band",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/Mitsune.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "mitsune-dim-1330",
+    "day": "dim",
+    "start": "13:30",
+    "end": "14:30",
+    "room": "Matsuri",
+    "title": null
+   },
+   {
+    "id": "mitsune-sam-1745",
+    "day": "sam",
+    "start": "17:45",
+    "end": "18:30",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "muteki",
+  "title": "Les hassha melodies",
+  "titleEn": "Hassha melodies",
+  "desc": "Émission culture japonaise",
+  "descEn": "Japanese culture radio",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/Muteki.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "muteki-sam-1145",
+    "day": "sam",
+    "start": "11:45",
+    "end": "12:45",
+    "room": "Kyoto",
+    "title": null
+   },
+   {
+    "id": "muteki-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Tokyo",
+    "title": "Les mascottes et les yuru-chara"
+   },
+   {
+    "id": "muteki-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Osaka",
+    "title": "Blind-test sur les animaux dans la musique nipponne"
+   },
+   {
+    "id": "muteki-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:30",
+    "room": "Osaka",
+    "title": "Les animaux compagnons les plus iconiques des jeux vidéo"
+   }
+  ]
+ },
+ {
+  "id": "nintendo",
+  "title": "Nintendo",
+  "titleEn": "Nintendo",
+  "desc": "Nouvelles consoles et jeux",
+  "descEn": "New consoles and games",
+  "type": "jeux",
+  "tags": [],
+  "image": "/invites/Nintendo.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "nintendo-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Espace Jeux-vidéo",
+    "title": null
+   },
+   {
+    "id": "nintendo-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Espace Jeux-vidéo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "ogin-sama",
+  "title": "Film tradi. Japonais : Ogin-sama",
+  "titleEn": "Trad. Japanese film : Ogin-sama",
+  "desc": "Projection - Ogin-sama",
+  "descEn": "Screening - Ogin Sama",
+  "type": "projection",
+  "tags": [],
+  "image": "/invites/ogin-sama-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "ogin-sama-dim-1045",
+    "day": "dim",
+    "start": "10:45",
+    "end": "12:45",
+    "room": "Fuyu",
+    "title": null
+   },
+   {
+    "id": "ogin-sama-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "16:00",
+    "room": "Fuyu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "onna-bakari-no-yoru",
+  "title": "Film tradi. Japonais : Onna bakari no yoru",
+  "titleEn": "Trad. Japanese film : Onna bakari no yoru",
+  "desc": "Projection - Onna bakari no yoru",
+  "descEn": "Screening - Onna bakari no yoru",
+  "type": "projection",
+  "tags": [],
+  "image": "/invites/onna-bakari-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "onna-bakari-no-yoru-sam-1045",
+    "day": "sam",
+    "start": "10:45",
+    "end": "12:45",
+    "room": "Fuyu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "pokemonirl",
+  "title": "Pokémon IRL",
+  "titleEn": "Pokémon IRL",
+  "desc": "Défi Pokémon",
+  "descEn": "Pokémon challenge",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/pokemonirl.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "pokemonirl-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Pokemon IRL",
+    "title": null
+   },
+   {
+    "id": "pokemonirl-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Pokemon IRL",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "rallye",
+  "title": "Rallye AshiAshi le Japon animal",
+  "titleEn": "AshiAshi Rally the Japan animal",
+  "desc": "Découvrez les animaux du Japon",
+  "descEn": "Discover Japan's animals",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/rallye.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "rallye-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "E03",
+    "title": null
+   },
+   {
+    "id": "rallye-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "E03",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "rika",
+  "title": "Fleurs en tissus",
+  "titleEn": "Fabric Flowers",
+  "desc": "Atelier fleurs en tissu",
+  "descEn": "Fabric flower workshop",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/rika.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "rika-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Nara",
+    "title": null
+   },
+   {
+    "id": "rika-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Nara",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "romandub",
+  "title": "Romandub - Atelier de doublage",
+  "titleEn": "Romandub - Voice Acting Workshop",
+  "desc": "Essayez le doublage",
+  "descEn": "Try voice acting",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/romandub.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "romandub-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "B01",
+    "title": null
+   },
+   {
+    "id": "romandub-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "B01",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "salle-allaitement",
+  "title": "Espace Allaitement & Change",
+  "titleEn": "Nursing & Changing Room",
+  "desc": "Espace dédié aux parents",
+  "descEn": "Dedicated space for parents",
+  "type": "continu",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/allaitement.jpg",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "salle-allaitement-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Salle d'Allaitement",
+    "title": null
+   },
+   {
+    "id": "salle-allaitement-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Salle d'Allaitement",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "salle-d-activites-polyjapan",
+  "title": "Activités et jeux",
+  "titleEn": "Activities and games",
+  "desc": "Quiz, blindtests et tierlist participative",
+  "descEn": "Quizzes, blindtest and participatory tierlist",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/salle-pj.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "salle-d-activites-polyjapan-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "16:00",
+    "room": "Aki",
+    "title": null
+   },
+   {
+    "id": "salle-d-activites-polyjapan-dim-1245",
+    "day": "dim",
+    "start": "12:45",
+    "end": "13:30",
+    "room": "Scène Raï",
+    "title": null
+   },
+   {
+    "id": "salle-d-activites-polyjapan-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Aki",
+    "title": "Tier list des fandom"
+   },
+   {
+    "id": "salle-d-activites-polyjapan-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "18:00",
+    "room": "Aki",
+    "title": null
+   },
+   {
+    "id": "salle-d-activites-polyjapan-sam-1515",
+    "day": "sam",
+    "start": "15:15",
+    "end": "16:15",
+    "room": "Scène Raï",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "salle-shika",
+  "title": "Salle Famille",
+  "titleEn": "Family Space",
+  "desc": "Espace Famille, lectures et origami",
+  "descEn": "Family space, reading and origami",
+  "type": "continu",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/shika-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "salle-shika-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "14:00",
+    "room": "Shika",
+    "title": null
+   },
+   {
+    "id": "salle-shika-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Shika",
+    "title": "Lectures à voix haute par Pyl"
+   },
+   {
+    "id": "salle-shika-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "18:00",
+    "room": "Shika",
+    "title": null
+   },
+   {
+    "id": "salle-shika-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "14:00",
+    "room": "Shika",
+    "title": null
+   },
+   {
+    "id": "salle-shika-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Shika",
+    "title": "Lectures à voix haute par Pyl"
+   },
+   {
+    "id": "salle-shika-sam-1500",
+    "day": "sam",
+    "start": "15:00",
+    "end": "20:00",
+    "room": "Shika",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "savinien-capy",
+  "title": "Le manga sous toutes ses reliures !",
+  "titleEn": "Manga in All Its Bindings!",
+  "desc": "Le manga sous toutes ses reliures !",
+  "descEn": "Manga in all its forms!",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/savinien-capy-carre.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "savinien-capy-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Tokyo",
+    "title": null
+   },
+   {
+    "id": "savinien-capy-sam-1315",
+    "day": "sam",
+    "start": "13:15",
+    "end": "14:15",
+    "room": "Natsu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "seisui-calligraphie",
+  "title": "Calligraphie",
+  "titleEn": "Calligraphy",
+  "desc": "Calligraphie japonaise",
+  "descEn": "Japanese calligraphy",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/seisui-calligraphie.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "seisui-calligraphie-dim-1330",
+    "day": "dim",
+    "start": "13:30",
+    "end": "14:30",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "seisui-calligraphie-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "seisui-calligraphie-sam-1245",
+    "day": "sam",
+    "start": "12:45",
+    "end": "13:45",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "seisui-calligraphie-sam-1400",
+    "day": "sam",
+    "start": "14:00",
+    "end": "15:00",
+    "room": "Ginko",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "shibari",
+  "title": "Shibari (public averti)",
+  "titleEn": "Shibari (mature audience)",
+  "desc": "Art du shibari",
+  "descEn": "Shibari art",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/shibari.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "shibari-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:30",
+    "room": "Kyoto",
+    "title": null
+   },
+   {
+    "id": "shibari-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Kyoto",
+    "title": null
+   },
+   {
+    "id": "shibari-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "15:30",
+    "room": "Kyoto",
+    "title": null
+   },
+   {
+    "id": "shibari-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:30",
+    "room": "Kyoto",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "slimane-yefsah",
+  "title": "Slimane Yefsah - Doublage de jeux vidéo et dédicaces",
+  "titleEn": "Slimane Yefsah - Video Game Voice Acting and Autograph Session",
+  "desc": "Doubleur de Clair Obscur",
+  "descEn": "Clair Obscur Voice actor",
+  "type": "conference",
+  "tags": [
+   "dedicace"
+  ],
+  "image": "/invites/Slimane.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "slimane-yefsah-dim-1345",
+    "day": "dim",
+    "start": "13:45",
+    "end": "15:15",
+    "room": "Osaka",
+    "title": "Slimane Yefsah - Expérience sur le doublage et dédicaces"
+   },
+   {
+    "id": "slimane-yefsah-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "13:00",
+    "room": "Osaka",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "spectacle-de-taiko",
+  "title": "Spectacle de Taiko",
+  "titleEn": "Taiko performance",
+  "desc": "Tambours japonais",
+  "descEn": "Japanese drums",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/taiko.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "spectacle-de-taiko-sam-1130",
+    "day": "sam",
+    "start": "11:30",
+    "end": "12:00",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "stacheposting",
+  "title": "Carnet reliure à quatre trous",
+  "titleEn": "Four-holed notebook binding",
+  "desc": "Reliure japonaise",
+  "descEn": "Japanese bookbinding",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/stacheposting.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "stacheposting-dim-1015",
+    "day": "dim",
+    "start": "10:15",
+    "end": "11:15",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "stacheposting-dim-1145",
+    "day": "dim",
+    "start": "11:45",
+    "end": "12:45",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "stacheposting-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "11:30",
+    "room": "Ginko",
+    "title": null
+   },
+   {
+    "id": "stacheposting-sam-1630",
+    "day": "sam",
+    "start": "16:30",
+    "end": "17:30",
+    "room": "Ginko",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "studio-bon",
+  "title": "Atelier linguistique et dessin d'animaux",
+  "titleEn": "Linguistics and animal drawing workshop",
+  "desc": "Atelier langue japonaise",
+  "descEn": "Japanese language workshop",
+  "type": "ponctuel",
+  "tags": [
+   "famille"
+  ],
+  "image": "/invites/studio-bon.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "studio-bon-dim-1245",
+    "day": "dim",
+    "start": "12:45",
+    "end": "13:45",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "studio-bon-dim-1615",
+    "day": "dim",
+    "start": "16:15",
+    "end": "17:15",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "studio-bon-sam-1145",
+    "day": "sam",
+    "start": "11:45",
+    "end": "12:45",
+    "room": "Haru",
+    "title": null
+   },
+   {
+    "id": "studio-bon-sam-1545",
+    "day": "sam",
+    "start": "15:45",
+    "end": "16:45",
+    "room": "Haru",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "sumika",
+  "title": "Sumika Tsujimoto",
+  "titleEn": "Sumika Tsujimoto",
+  "desc": "Reprises de génériques d'anime au saxophone",
+  "descEn": "Anime theme song covers on saxophone",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/sumika.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "sumika-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "16:45",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "suminagashi",
+  "title": "Suminagashi - Encres flottantes",
+  "titleEn": "Suminagashi - Floating Ink Workshop",
+  "desc": "Encres flottantes japonaises",
+  "descEn": "Japanese floating ink",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/suminagashi.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "suminagashi-dim-1200",
+    "day": "dim",
+    "start": "12:00",
+    "end": "13:00",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-dim-1330",
+    "day": "dim",
+    "start": "13:30",
+    "end": "14:30",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-dim-1530",
+    "day": "dim",
+    "start": "15:30",
+    "end": "16:30",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-sam-1200",
+    "day": "sam",
+    "start": "12:00",
+    "end": "13:00",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-sam-1330",
+    "day": "sam",
+    "start": "13:30",
+    "end": "14:30",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-sam-1600",
+    "day": "sam",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Matcha",
+    "title": null
+   },
+   {
+    "id": "suminagashi-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:30",
+    "room": "Matcha",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "swisscosplay",
+  "title": "Swiss Cosplay Family",
+  "titleEn": "Swiss Cosplay Family",
+  "desc": "Atelier cosplay",
+  "descEn": "Cosplay workshop",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/swisscosplay.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "swisscosplay-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Momiji",
+    "title": null
+   },
+   {
+    "id": "swisscosplay-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Momiji",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "taiko",
+  "title": "Jouer au Taiko",
+  "titleEn": "Playing Taiko",
+  "desc": "Tambours japonais",
+  "descEn": "Japanese drums",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/taiko.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "taiko-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "11:30",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "taiko-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "11:30",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "tanukara",
+  "title": "Karaoké - Tanukara",
+  "titleEn": "Karaoke - Tanukara",
+  "desc": "Karaoké",
+  "descEn": "Karaoke",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/tanukara.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "tanukara-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Fuji",
+    "title": null
+   },
+   {
+    "id": "tanukara-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Fuji",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "tatouages",
+  "title": "Tatouages à Japan Impact !",
+  "titleEn": "Tattoos at Japan Impact!",
+  "desc": "Tatouages",
+  "descEn": "Tatouages",
+  "type": "tattoo",
+  "tags": [],
+  "image": "/invites/tatouages.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "tatouages-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Dango",
+    "title": null
+   },
+   {
+    "id": "tatouages-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Dango",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "tcg-league-valaisanne",
+  "title": "TCG-VS – Animation et explications de différents TCG",
+  "titleEn": "TCG-VS - Activities and Explanations of Various TCGs",
+  "desc": "Jeux de cartes à collectionner",
+  "descEn": "Trading card games",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/tcgvs.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "tcg-league-valaisanne-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Daisen",
+    "title": null
+   },
+   {
+    "id": "tcg-league-valaisanne-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Daisen",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "touhou-bohu",
+  "title": "Touhou Project",
+  "titleEn": "Touhou Project",
+  "desc": "Touhou Project",
+  "descEn": "Touhou Project",
+  "type": "jeux",
+  "tags": [],
+  "image": "/invites/touhou-bohu.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "touhou-bohu-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Edo",
+    "title": null
+   },
+   {
+    "id": "touhou-bohu-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Edo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "tufting",
+  "title": "Tapis Participatif (tufting)",
+  "titleEn": "Collaborative mat (tufting)",
+  "desc": "Tapis collectif",
+  "descEn": "Collective rug",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/tufting.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "tufting-dim-1030",
+    "day": "dim",
+    "start": "10:30",
+    "end": "12:00",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-dim-1215",
+    "day": "dim",
+    "start": "12:15",
+    "end": "13:45",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-dim-1430",
+    "day": "dim",
+    "start": "14:30",
+    "end": "16:00",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-dim-1615",
+    "day": "dim",
+    "start": "16:15",
+    "end": "17:45",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-sam-1030",
+    "day": "sam",
+    "start": "10:30",
+    "end": "12:00",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-sam-1215",
+    "day": "sam",
+    "start": "12:15",
+    "end": "13:45",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-sam-1430",
+    "day": "sam",
+    "start": "14:30",
+    "end": "16:00",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-sam-1615",
+    "day": "sam",
+    "start": "16:15",
+    "end": "17:45",
+    "room": "Tate",
+    "title": null
+   },
+   {
+    "id": "tufting-sam-1800",
+    "day": "sam",
+    "start": "18:00",
+    "end": "19:30",
+    "room": "Tate",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "utakiambi",
+  "title": "Utakiambi",
+  "titleEn": "Utakiambi",
+  "desc": "Groupe de musique traditionnelle okinawaïenne basé à Genève",
+  "descEn": "Traditional Okinawan music group based in Geneva",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/utakiambi-carre.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "utakiambi-sam-1315",
+    "day": "sam",
+    "start": "13:15",
+    "end": "14:00",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "wa-rei-ryu-scene",
+  "title": "Wa Rei Ryū",
+  "titleEn": "Wa Rei Ryū",
+  "desc": "Art du sabre japonais",
+  "descEn": "Art of the Japanese sword",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/wareiryu-logo.jpeg",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "wa-rei-ryu-scene-dim-1430",
+    "day": "dim",
+    "start": "14:30",
+    "end": "15:15",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "wa-rei-ryu-scene-sam-1300",
+    "day": "sam",
+    "start": "13:00",
+    "end": "13:45",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "wa-rei-ryu-scene-sam-1815",
+    "day": "sam",
+    "start": "18:15",
+    "end": "19:00",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "wako-aikido-nyon",
+  "title": "Wako Aïkido Nyon",
+  "titleEn": "Wako Aïkido Nyon",
+  "desc": "Démonstrations et inititation d'Aïkido",
+  "descEn": "Demonstrations and initiation to Aikido",
+  "type": "arts",
+  "tags": [],
+  "image": "/invites/aikido_nyon.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "wako-aikido-nyon-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:15",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "wako-aikido-nyon-sam-1345",
+    "day": "sam",
+    "start": "13:45",
+    "end": "14:30",
+    "room": "Reiwa",
+    "title": null
+   },
+   {
+    "id": "wako-aikido-nyon-sam-1730",
+    "day": "sam",
+    "start": "17:30",
+    "end": "18:15",
+    "room": "Reiwa",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "wayfarer",
+  "title": "Wayfarer - Ken to Shin",
+  "titleEn": "Wayfarer - Ken to Shin",
+  "desc": "JDR japonais",
+  "descEn": "Japanese RPG",
+  "type": "continu",
+  "tags": [],
+  "image": "/invites/diane-georges-jdr.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "wayfarer-dim-1000",
+    "day": "dim",
+    "start": "10:00",
+    "end": "18:00",
+    "room": "Nagano",
+    "title": null
+   },
+   {
+    "id": "wayfarer-sam-1000",
+    "day": "sam",
+    "start": "10:00",
+    "end": "20:00",
+    "room": "Nagano",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "zun-anime",
+  "title": "Drawing activity",
+  "titleEn": "Drawing activity",
+  "desc": "Dessin visages manga",
+  "descEn": "Drawing manga faces",
+  "type": "ponctuel",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/zun-i.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "zun-anime-sam-1220",
+    "day": "sam",
+    "start": "12:20",
+    "end": "12:50",
+    "room": "Wagashi",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "cyril-coppini-atelier",
+  "title": "Découvrir le Rakugo",
+  "titleEn": "Discover le Rakugo",
+  "desc": "Initiation au Rakugo",
+  "descEn": "Rakugo initiation",
+  "type": "ponctuel",
+  "tags": [],
+  "image": "/invites/cyril-atelier.webp",
+  "registration": true,
+  "sessions": [
+   {
+    "id": "cyril-coppini-atelier-dim-1345",
+    "day": "dim",
+    "start": "13:45",
+    "end": "14:45",
+    "room": "Wagashi",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "franponais",
+  "title": "Franponais - Spectacle de Manzai",
+  "titleEn": "Franponais – Manzai Comedy Show",
+  "desc": "Spectacle de Manzai",
+  "descEn": "Manzai show",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/franponais-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "franponais-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Tokyo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "hoishi-aina",
+  "title": "Hoishi Aina - A l'intérieur du monde des VTubers",
+  "titleEn": "Hoishi Aina - Inside the world of VTubers",
+  "desc": "VTubeuse suisse",
+  "descEn": "Swiss VTuber",
+  "type": "conference",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/hoishi-aina.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "hoishi-aina-dim-1145",
+    "day": "dim",
+    "start": "11:45",
+    "end": "12:45",
+    "room": "Tokyo",
+    "title": null
+   },
+   {
+    "id": "hoishi-aina-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Kitsune",
+    "title": "Hoishi Aina - La reprise JP : Un phénomène numérique"
+   }
+  ]
+ },
+ {
+  "id": "in-synk",
+  "title": "Show danse inSYNK",
+  "titleEn": "Danse show inSYNK",
+  "desc": "Groupe de danse",
+  "descEn": "Dance cover crew",
+  "type": "concours",
+  "tags": [
+   "online"
+  ],
+  "image": "/invites/in-synk.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "in-synk-dim-1515",
+    "day": "dim",
+    "start": "15:15",
+    "end": "15:45",
+    "room": "Taiyo",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "kabe_conf",
+  "title": "Les carpes Koï - conférence",
+  "titleEn": "Koï fish - conference",
+  "desc": "Conférence carpes koï",
+  "descEn": "Koi fish conference",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/kabe.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "kabe_conf-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "14:00",
+    "room": "Kitsune",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "le-garcon-et-la-bete",
+  "title": "Le Garçon et la Bête",
+  "titleEn": "The Boy and the Beast",
+  "desc": "Projection - Le Garçon et la Bête",
+  "descEn": "Screening - The Boy and the Beast",
+  "type": "projection",
+  "tags": [],
+  "image": "/invites/bakemononoko-i.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "le-garcon-et-la-bete-dim-1400",
+    "day": "dim",
+    "start": "14:00",
+    "end": "16:00",
+    "room": "Fuyu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "maoh",
+  "title": "Maoh - Matériaux pour débuter le cosplay",
+  "titleEn": "Maoh – Materials for Getting Started in Cosplay",
+  "desc": "Experte cosplay",
+  "descEn": "Cosplay expert",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/maoh.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "maoh-dim-1600",
+    "day": "dim",
+    "start": "16:00",
+    "end": "17:00",
+    "room": "Sakura",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "musee-romain",
+  "title": "L’Antiquité dans la pop culture japonaise",
+  "titleEn": "Antiquity in Japanese Pop Culture",
+  "desc": "Antiquité et pop culture japonaise",
+  "descEn": "Antiquity in Japanese pop culture",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/musee_romain.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "musee-romain-dim-1500",
+    "day": "dim",
+    "start": "15:00",
+    "end": "16:00",
+    "room": "Natsu",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "ochikobore",
+  "title": "Ochikobore",
+  "titleEn": "Ochikobore",
+  "desc": "Groupe J-Pop",
+  "descEn": "J-Pop band",
+  "type": "concert",
+  "tags": [
+   "online",
+   "dedicace"
+  ],
+  "image": "/invites/ochikobore.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "ochikobore-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:30",
+    "room": "Matsuri",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "toru-wada",
+  "title": "Shōchū : dégustation commentée",
+  "titleEn": "Shōchū : commented tasting session",
+  "desc": "Shōchū : dégustation commentée",
+  "descEn": "Shōchū : commented tasting session",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/toru-wada-carre.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "toru-wada-dim-1300",
+    "day": "dim",
+    "start": "13:00",
+    "end": "13:45",
+    "room": "Kyoto",
+    "title": null
+   }
+  ]
+ },
+ {
+  "id": "wa-rei-ryu",
+  "title": "Conférence sur le sabre Tantō",
+  "titleEn": "Conference about the Tantō sword",
+  "desc": "Art du sabre japonais",
+  "descEn": "Art of the Japanese sword",
+  "type": "conference",
+  "tags": [],
+  "image": "/invites/wa_rei_ryu.webp",
+  "registration": false,
+  "sessions": [
+   {
+    "id": "wa-rei-ryu-dim-1130",
+    "day": "dim",
+    "start": "11:30",
+    "end": "12:30",
+    "room": "Natsu",
+    "title": null
+   }
+  ]
+ }
+]

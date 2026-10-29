@@ -1,0 +1,5 @@
+/* Mise en page propre à la maquette A : rien qui redéfinisse ui.css */
+.sr { position: absolute; left: -9999px; }
+.btn-secondary[aria-pressed='true'], .btn-secondary[aria-selected='true'] { border-color: var(--text); box-shadow: inset 0 0 0 1px var(--text); }
+.stack { display: grid; gap: var(--space-3); }
+.back { display: inline-flex; align-items: center; min-height: 44px; }

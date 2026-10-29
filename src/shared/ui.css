@@ -1,0 +1,68 @@
+/* Système visuel commun des maquettes visiteur. Peu de variantes, exprès :
+   une police d'interface, 4 tailles, 2 graisses, une couleur d'accent, un style par type d'élément. */
+@import './tokens.css';
+
+:root {
+	--text: var(--app-fg);
+	--text-muted: #5f5a78;
+	--line: #e7e1d8;
+	--surface: #ffffff;
+	--accent: var(--color-primary); /* réservé à l'action principale */
+
+	--fs-sm: 0.875rem;  /* métadonnées : heure, salle, aide */
+	--fs-md: 1rem;      /* texte courant */
+	--fs-lg: 1.125rem;  /* titres de cartes, de dialogues, de sections */
+	--fs-xl: 1.5rem;    /* titre de page (un seul par page) */
+
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-6: 24px;
+	--radius: 8px;
+}
+
+body { font-size: var(--fs-md); }
+h1, h2, h3, p { margin: 0; }
+
+/* Titres : Zen Dots uniquement pour le titre de page */
+.page-title { font-family: var(--font-display); font-size: var(--fs-xl); font-weight: 400; line-height: 1.25; }
+.title { font-size: var(--fs-lg); font-weight: 600; line-height: 1.3; }
+.meta { font-size: var(--fs-sm); color: var(--text-muted); }
+.muted { color: var(--text-muted); }
+
+/* Boutons : un seul .btn (accent) par écran ou dialogue */
+.btn, .btn-secondary {
+	display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+	min-height: 44px; padding: 0 var(--space-4); border-radius: var(--radius);
+	font-size: var(--fs-md); font-weight: 600; text-decoration: none; border: 1px solid transparent;
+}
+.btn { background: var(--accent); color: #fff; }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--line); }
+.btn:disabled, .btn-secondary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-block { width: 100%; }
+.link { color: var(--text); text-decoration: underline; text-underline-offset: 2px; background: none; border: 0; padding: 0; }
+
+/* Surfaces */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.divider { border: 0; border-top: 1px solid var(--line); margin: var(--space-4) 0; }
+
+/* Étiquette d'état : le seul élément coloré hors bouton principal */
+.tag {
+	display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+	padding: 2px 6px; border-left: 3px solid currentColor; line-height: 1.5; white-space: nowrap;
+	color: var(--st-closed-ink); background: var(--st-closed-bg);
+}
+.tag[data-tone='lottery'] { color: var(--st-lottery-ink); background: var(--st-lottery-bg); }
+.tag[data-tone='open'] { color: var(--st-open-ink); background: var(--st-open-bg); }
+.tag[data-tone='queue'] { color: var(--st-queue-ink); background: var(--st-queue-bg); }
+.tag[data-tone='soon'] { color: var(--st-soon-ink); background: var(--st-soon-bg); }
+.tag[data-tone='cancel'] { color: var(--st-cancel-ink); background: var(--st-cancel-bg); }
+.tag[data-tone='free'] { color: var(--st-free-ink); background: var(--st-free-bg); }
+
+/* Formulaires */
+.field { display: grid; gap: var(--space-1); font-size: var(--fs-sm); color: var(--text-muted); }
+.input {
+	min-height: 44px; padding: 0 var(--space-3); border: 1px solid var(--line); border-radius: var(--radius);
+	font: inherit; font-size: var(--fs-md); color: var(--text); background: var(--surface);
+}
