@@ -6,6 +6,7 @@
 	import RegisterDialog from './RegisterDialog.svelte';
 	import DemoPanel from '../shared/DemoPanel.svelte';
 	import Notifications from '../shared/Notifications.svelte';
+	import ScanNotice from '../shared/ScanNotice.svelte';
 	import { app } from '../shared/store.svelte.js';
 	import { LOGO } from '../shared/data.js';
 	import { ui } from './ui.svelte.js';
@@ -37,6 +38,7 @@
 </header>
 
 <main class="wrap">
+	<div class="scan"><ScanNotice ticketsHref={route === '/billets' ? null : '#/billets'} /></div>
 	{#if fiche}<Detail id={fiche} />
 	{:else if route === '/programme'}<Program />
 	{:else if route === '/billets'}<Tickets />
@@ -60,6 +62,7 @@
 	nav a[aria-current] { color: #fff; border-bottom-color: #fff; }
 	select { min-height: 44px; border: 1px solid #ffffff66; border-radius: var(--radius); background: transparent; color: #fff; padding: 0 var(--space-2); font: inherit; font-size: var(--fs-sm); }
 	select option { color: #000; }
+	.scan:has(.alert) { margin-bottom: var(--space-6); }
 	main { padding-top: var(--space-6); padding-bottom: 80px; }
 	@media (min-width: 700px) { nav { order: 0; width: auto; } .bar { flex-wrap: nowrap; } }
 </style>

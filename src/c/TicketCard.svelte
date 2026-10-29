@@ -18,7 +18,7 @@
 		<div class="head">
 			<h3 class="title">{ticket.name}</h3>
 			<span class="meta">{ticket.age} ans{ticket.main ? ' · moi' : ''}</span>
-			{#if info.reg}<Tag reg={info.reg} />{/if}
+			{#if info.reg}<Tag reg={info.reg} />{:else if !ticket.scanned}<span class="tag" data-tone="queue">À scanner à l'entrée</span>{/if}
 		</div>
 		<p>{info.line}</p>
 		<p class="meta">{info.todo}</p>

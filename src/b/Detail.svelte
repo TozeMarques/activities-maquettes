@@ -49,7 +49,7 @@
 					{#if a.registration}
 						<Frieze {s} />
 						{#if isOpen(s) && !regOf(s)}
-							<button class="btn-secondary" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>
+							<button class="btn btn-cta" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>
 						{/if}
 					{/if}
 				</li>

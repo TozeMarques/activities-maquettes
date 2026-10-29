@@ -3,6 +3,7 @@
 	import { LOGO } from '../shared/data.js';
 	import DemoPanel from '../shared/DemoPanel.svelte';
 	import Notifications from '../shared/Notifications.svelte';
+	import ScanNotice from '../shared/ScanNotice.svelte';
 	import Wallet from './Wallet.svelte';
 	import Catalog from './Catalog.svelte';
 	import Activity from './Activity.svelte';
@@ -25,6 +26,8 @@
 </header>
 
 <main class="wrap">
+	<!-- sans billet, la page Mes billets affiche déjà l'accueil pas à pas -->
+	{#if page !== 'pass' || app.tickets.length}<ScanNotice ticketsHref={page === 'pass' ? null : '#/'} />{/if}
 	{#if page === 'catalogue'}<Catalog />
 	{:else if page === 'activite'}<Activity id={parts[1]} />
 	{:else if page === 'inscrire'}{#key parts[1]}<Wizard id={parts[1]} />{/key}

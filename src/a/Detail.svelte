@@ -4,9 +4,11 @@
 	import Tag from '../shared/Tag.svelte';
 	import Sheet from './Sheet.svelte';
 
-	let { id } = $props();
+	let { id, open } = $props();
 	const act = $derived(activities.find((a) => a.id === id));
-	let sheet = $state(null);
+	// open = id de séance : la carte du programme ouvre directement l'inscription
+	const first = act?.sessions.find((s) => s.id === open);
+	let sheet = $state(first ? { ...first, activity: act } : null);
 	const fav = $derived(app.favs.includes(id));
 	const myReg = (s) => app.regs.find((r) => r.session === s.id);
 	const sub = (s) => ({
@@ -50,7 +52,7 @@
 							{#if reg}
 								<a class="btn-secondary" href="#/mine">Voir mon inscription</a>
 							{:else if OPEN_PHASES.includes(s.phase)}
-								<button class="btn-secondary" onclick={() => (sheet = { ...s, activity: act })}>{phaseInfo(s).action}</button>
+								<button class="btn btn-cta" onclick={() => (sheet = { ...s, activity: act })}>{phaseInfo(s).action}</button>
 							{/if}
 						</li>
 					{/each}

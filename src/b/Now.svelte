@@ -22,7 +22,7 @@
 			<span class="meta">{s.start}–{s.end} · {s.room}</span>
 			<span class="state"><Tag session={s} />{#if countdown(s)}<span class="meta">{countdown(s)}</span>{/if}</span>
 		</div>
-		{#if isOpen(s)}<button class="btn-secondary" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>{/if}
+		{#if isOpen(s)}<button class="btn btn-cta" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>{/if}
 	</li>
 {/snippet}
 

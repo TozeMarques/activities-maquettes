@@ -16,7 +16,7 @@
 		<span class="state"><Tag session={s} />{#if countdown(s)}<span class="meta">{countdown(s)}</span>{/if}</span>
 	</a>
 	{#if a.registration && isOpen(s)}
-		<button class="btn-secondary" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>
+		<button class="btn btn-cta" onclick={() => openReg(s)}>{phaseInfo(s).action}</button>
 	{/if}
 	<Fav id={a.id} name={a.title} />
 </div>

@@ -34,7 +34,7 @@
 		<li class="card">
 			<span class="title">{t.name}</span> <span class="meta">· {t.age} ans · n° {t.code}{t.main ? ' · moi' : ''}</span>
 			<p class="meta">
-				{#if !t.scanned}Pas encore scanné à l'entrée : inscriptions impossibles{:else if r}Pris : {titleOf(sessionById[r.session])}{:else}Scanné, libre pour une activité{/if}
+				{#if !t.scanned}<span class="tag" data-tone="queue">À scanner à l'entrée</span>{:else if r}Pris : {titleOf(sessionById[r.session])}{:else}Scanné, libre pour une activité{/if}
 			</p>
 			<TicketQR ticket={t} />
 		</li>

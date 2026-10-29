@@ -38,7 +38,7 @@
 			<span class="code">N° {t.code}</span>
 			<div>
 				<p>{t.name}, {t.age} ans{t.main ? ' · moi' : ''}</p>
-				<p class="meta">{status(t)}</p>
+				{#if t.scanned}<p class="meta">{status(t)}</p>{:else}<p><span class="tag" data-tone="queue">À scanner à l'entrée</span></p>{/if}
 				<TicketQR ticket={t} />
 			</div>
 		</li>

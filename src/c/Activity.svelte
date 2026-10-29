@@ -50,7 +50,7 @@
 							<span>{s.start} à {s.end} · salle {s.room}</span>
 							<Tag session={s} />
 							{#if a.registration && OPEN_PHASES.includes(s.phase)}
-								<button class="btn-secondary" onclick={() => go('/inscrire/' + s.id)}>{phaseInfo(s).action}</button>
+								<button class="btn btn-cta" onclick={() => go('/inscrire/' + s.id)}>{phaseInfo(s).action}</button>
 							{/if}
 						</li>
 					{/each}
