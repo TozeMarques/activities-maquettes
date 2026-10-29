@@ -21,7 +21,10 @@
 			.pc b { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
 			.pro b { color: #3f6b2a; }
 			.con b { color: #9b2c2a; }
-			.open { display: inline-block; margin-top: 10px; font-weight: 600; color: #b43937; }
+			.open { display: inline-flex; align-items: center; min-height: 44px; margin-top: 14px; padding: 0 22px; border-radius: 8px; background: #b43937; color: #fff; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 2px 0 #7a2422; }
+			.open::after { content: "→"; margin-left: 10px; }
+			.open:hover { background: #9b2c2a; }
+			.open:focus-visible { outline: 3px solid #29215c; outline-offset: 2px; }
 			ol { padding-left: 20px; }
 			@media (max-width: 560px) { .pc { grid-template-columns: 1fr; } }
 		</style>
@@ -98,7 +101,7 @@
 						<li><b>Check-in staff</b> : sur téléphone, scan du billet ou recherche manuelle, compteur de personnes en plus, fiche du prestataire, débrief en fin de séance. Fonctionne aussi hors ligne.</li>
 					</ul>
 					<p class="muted">Le sélecteur en haut passe d'une vue à l'autre.</p>
-					<a class="open" href="presta/">Ouvrir</a>
+					<a class="open" href="presta/">Ouvrir la vue prestataire</a>
 				</li>
 			</ul>
 
