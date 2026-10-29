@@ -19,7 +19,8 @@ export function ticketInfo(t) {
 		case 'lost': return { ...base, line: `${where}. Pas de place au tirage. Ton billet est libéré.`, todo: 'Il reste peut-être des places au premier arrivé : regarde les activités ouvertes.', cta: true };
 		case 'queue': return { ...base, line: `${where}. Pas une place garantie : le prestataire fait entrer la file dans l'ordre d'arrivée, s'il reste de la place.`, todo: `Sois salle ${s.room} dès ${s.start} pour tenter ta chance.` };
 		case 'registered': return { ...base, line: `${where}, salle ${s.room}. Ta place est réservée.${group}`, todo: `Sois salle ${s.room} avant ${s.start}.` };
-		case 'checkedin': return { ...base, line: `${where}. Check-in fait, merci d'être venu.`, todo: 'Ton billet est libre : donne ton avis ci-dessous.', review: true };
+		case 'checkedin': if (reg.selfAt) return { ...base, line: `${where}. Présence confirmée.`, todo: "Ton avis se donne après l'activité." };
+			return { ...base, line: `${where}. Check-in fait, merci d'être venu.`, todo: 'Ton billet est libre : donne ton avis ci-dessous.', review: true };
 		case 'cancelled': return { ...base, line: `${where} est annulée. Aucune inscription n'est perdue : ton billet est libre.`, todo: 'Choisis une autre activité.', cta: true };
 	}
 }

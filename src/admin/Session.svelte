@@ -5,6 +5,7 @@
 	import Tag from './Tag.svelte';
 	import Icon from './Icon.svelte';
 	import Confirm from './Confirm.svelte';
+	import QR from '../shared/QR.svelte';
 
 	let { s, a } = $derived(sessionOf(adm.param));
 	let r = $derived(adm.rosters[adm.param]);
@@ -146,6 +147,12 @@
 			<button class="btn" disabled={ph === 'lottery' || ph === 'cancelled'} onclick={toggleCheckin}><Icon name="check" size={16} />{s.checkinOpen ? 'Fermer le check-in' : 'Ouvrir le check-in'}</button>
 			<a class="btn" href="../presta/#checkin/{s.id}"><Icon name="ext" size={16} />Écran de check-in (téléphone)</a>
 			<p class="small muted">Le check-in est informatif : il sert aux statistiques, l'entrée reste décidée sur place.</p>
+			<details class="selfqr">
+				<summary class="small">QR d'auto-check-in de la salle {s.room}</summary>
+				<QR code={'salle-' + s.room} label="QR d'auto-check-in de la salle {s.room}" />
+				<p class="small muted">À imprimer et afficher à l'entrée. Le visiteur inscrit le scanne pour confirmer sa présence ; le staff peut toujours pointer à la main.</p>
+				<button class="btn sm" onclick={() => print()}>Imprimer</button>
+			</details>
 			<hr />
 			<a class="btn ghost" href="#journal/{s.id}"><Icon name="journal" size={16} />Journal de la séance</a>
 		</aside>
@@ -158,6 +165,8 @@
 {/if}
 
 <style>
+	.selfqr summary { cursor: pointer; font-weight: 600; color: var(--color-secondary); min-height: 32px; display: flex; align-items: center; }
+	.selfqr :global(svg) { max-width: 160px; }
 	.head { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; }
 	.head .cover { width: 88px; height: 88px; border-radius: var(--radius-lg); object-fit: cover; flex: none; }
 	.layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 16px; align-items: start; }

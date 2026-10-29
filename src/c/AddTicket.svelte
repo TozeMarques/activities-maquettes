@@ -31,13 +31,13 @@
 			<p class="meta">{scanning ? 'Lecture du QR code…' : 'Place le QR de ton billet dans le cadre'}</p>
 			<span class="frame"></span>
 		</div>
-		<button class="btn" onclick={scan} disabled={scanning}>Simuler un scan</button>
+		<button class="btn-secondary" onclick={scan} disabled={scanning}>Simuler un scan</button>
 	{:else}
 		<form onsubmit={submit}>
 			<label class="field">Numéro du billet<input class="input" bind:value={code} inputmode="numeric" required placeholder="ex. 4821" /></label>
 			<label class="field">Prénom<input class="input" bind:value={name} required autocomplete="off" /></label>
 			<label class="field">Âge<input class="input" bind:value={age} type="number" min="0" max="99" required /></label>
-			<button class="btn">Ajouter ce billet</button>
+			<button class="btn-secondary">Ajouter ce billet</button>
 		</form>
 	{/if}
 	<details>

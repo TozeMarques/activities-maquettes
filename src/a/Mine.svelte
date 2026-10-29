@@ -2,6 +2,7 @@
 	import { sessionById, days } from '../shared/data.js';
 	import { app, cancelReg } from '../shared/store.svelte.js';
 	import Tag from '../shared/Tag.svelte';
+	import SelfCheckin from '../shared/SelfCheckin.svelte';
 	import { ics } from './lib.js';
 
 	let rated = $state({});
@@ -17,7 +18,8 @@
 			case 'lost': return "Votre billet est libéré. Il reste peut-être des places au premier arrivé, regardez le programme.";
 			case 'queue': return `Position ${r.queuePos}. Ce n'est pas une place garantie : présentez-vous sur place à ${s.start}, le prestataire fait entrer la file dans l'ordre d'arrivée s'il reste de la place.`;
 			case 'registered': return `Soyez à ${s.room ?? "l'activité"} avant ${s.start} avec le billet de ${who} pour le check-in.`;
-			case 'checkedin': return "Merci d'être venu. Votre avis est lu par l'équipe animation.";
+			case 'checkedin': if (r.selfAt) return "Vous pourrez donner votre avis après l'activité.";
+				return "Merci d'être venu. Votre avis est lu par l'équipe animation.";
 			case 'cancelled': return 'Cette activité est annulée. Votre billet est libéré, vous pouvez vous inscrire ailleurs.';
 		}
 	}
@@ -36,8 +38,9 @@
 				<h2 class="title"><a href="#/activity/{s.activity.id}">{s.activity.title}</a></h2>
 				<p class="meta">{DAY[s.day]} · {s.start}–{s.end}{s.room ? ' · ' + s.room : ''}<br />Billets : {r.tickets.map((id) => app.tickets.find((t) => t.id === id)?.name).join(', ')}</p>
 				<p>{todo(r, s)}</p>
+				<SelfCheckin reg={r} room={s.room} />
 
-				{#if r.state === 'checkedin'}
+				{#if r.state === 'checkedin' && !r.selfAt}
 					{#if rated[s.id]}
 						<p class="meta">Avis envoyé, merci.</p>
 					{:else}

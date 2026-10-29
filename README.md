@@ -12,6 +12,7 @@ La page d'accueil (http://localhost:5173) liste les maquettes :
 - `/a/` Affiches, `/b/` Planning, `/c/` Mon pass : trois designs visiteur
 - `/admin/` : backoffice comité et admin
 - `/presta/` : vue prestataire et check-in staff
+- `/mail/` : e-mails envoyés aux visiteurs connectés
 
 Le bouton **Démo** des maquettes visiteur change l'état des billets. Heure de démo : samedi 11:20.
 

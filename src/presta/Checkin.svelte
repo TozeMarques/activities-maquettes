@@ -1,7 +1,8 @@
 <script>
 	import { days, NOW, sessionById } from '../shared/data.js';
-	import { roster } from './data.js';
-	import { pres, setPresent, countPresent } from './state.svelte.js';
+	import { roster, prestaInfo } from './data.js';
+	import { pres, setPresent, countPresent, extra, selfScan } from './state.svelte.js';
+	import Perma from './Perma.svelte';
 	import Icon from './Icon.svelte';
 
 	// Séances du jour pour lesquelles une liste figée existe
@@ -18,7 +19,10 @@
 
 	const s = $derived(sessionById[id]);
 	const r = $derived(roster(id));
-	const nb = $derived(countPresent(id));
+	const plus = $derived(extra[id] ?? 0);
+	const nb = $derived(countPresent(id) + plus);
+	const info = $derived(prestaInfo(s.activity));
+	let debrief = $state({});
 	const pleine = $derived(nb >= s.seats);
 	const norm = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 	const match = (p) => !q.trim() || p.code.includes(q.trim()) || norm(p.nom).includes(norm(q.trim()));
@@ -71,6 +75,7 @@
 </script>
 
 <h1>Check-in</h1>
+<Perma />
 
 <div class="net" class:off={!enLigne}>
 	<Icon n={enLigne ? 'wifi' : 'off'} />
@@ -96,8 +101,22 @@
 
 <div class="count" class:full={pleine}>
 	<span class="big">{nb}<small> / {s.seats}</small></span>
-	<span>présents / places{#if pleine}<br /><b>Salle pleine</b>{/if}</span>
+	<span>présents / places{#if plus}<br />dont {plus} en plus{/if}{#if pleine}<br /><b>Salle pleine</b>{/if}</span>
 </div>
+
+<div class="extra">
+	<span><b>Personnes en plus</b><small>Entrées sans inscription, avec l'accord du prestataire</small></span>
+	<button class="btn sq" aria-label="Une de moins" disabled={!plus} onclick={() => (extra[id] = plus - 1)}><Icon n="minus" /></button>
+	<span class="n">{plus}</span>
+	<button class="btn sq" aria-label="Une de plus" onclick={() => (extra[id] = plus + 1)}><Icon n="plus" /></button>
+</div>
+
+<details class="presta">
+	<summary>Prestataire et contrat</summary>
+	<p><b>{info.contact}</b> · <a href="tel:{info.tel.replaceAll(' ', '')}">{info.tel}</a></p>
+	<ul class="dots">{#each info.contrat as c}<li>{c}</li>{/each}</ul>
+	{#if info.infos}<p class="note"><b>Infos diverses</b>{info.infos}</p>{/if}
+</details>
 
 <button class="btn primary scanbtn" onclick={() => ((scan = !scan), (resultat = null))}>
 	<Icon n="scan" /> {scan ? 'Fermer le scanner' : 'Scanner le QR du billet'}
@@ -148,7 +167,7 @@
 			<li>
 				<button class="row" class:here aria-pressed={here} onclick={() => toggle(p.code, !here, p.nom)}>
 					<span class="code">{p.code}</span>
-					<span class="nom">{p.nom}{#if p.groupe}<small>Groupe {p.groupe.lettre} ({p.groupe.taille})</small>{/if}</span>
+					<span class="nom">{p.nom}{#if p.groupe}<small>Groupe {p.groupe.lettre} ({p.groupe.taille})</small>{/if}{#if here && selfScan(p.code)}<small>Scanné par le visiteur à {pres[id][p.code]}</small>{/if}</span>
 					<span class="st"><Icon n={here ? 'check' : 'x'} />{here ? 'Présent' : 'Absent'}</span>
 				</button>
 			</li>
@@ -177,7 +196,40 @@
 	</ul>
 {/if}
 
+<section class="debrief">
+	<h2>Débrief de l'entrée</h2>
+	{#if debrief[id] === 'sent'}
+		<p class="note ok"><b>Merci, débrief envoyé</b>Le pôle animation le lit dans le backoffice.</p>
+	{:else}
+		<p class="hint">À remplir une fois la séance lancée. {plus} personne{plus > 1 ? 's' : ''} en plus enregistrée{plus > 1 ? 's' : ''}.</p>
+		<fieldset>
+			<legend>Un souci avec des visiteurs ?</legend>
+			<label><input type="radio" name="inc" checked /> Non</label>
+			<label><input type="radio" name="inc" /> Oui</label>
+		</fieldset>
+		<label class="lab" for="com">Commentaire</label>
+		<textarea id="com" rows="3" placeholder="Retard du prestataire, salle trop petite, file mal comprise…"></textarea>
+		<button class="btn dark" onclick={() => (debrief[id] = 'sent')}>Envoyer le débrief</button>
+	{/if}
+</section>
+
 <style>
+	.extra { display: flex; align-items: center; gap: 10px; padding: 8px 0; }
+	.extra > span:first-child { flex: 1; display: grid; }
+	.extra small { font-size: 0.8rem; color: var(--color-gray-700); }
+	.extra .n { font-size: 1.6rem; font-weight: 700; min-width: 1.5em; text-align: center; }
+	.btn.sq { width: 52px; padding: 0; }
+	.presta { margin: 8px 0; background: #fff; border: 1px solid var(--color-gray-200); padding: 0 12px; }
+	.presta summary { min-height: 48px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+	.presta[open] { padding-bottom: 12px; }
+	.presta a { color: inherit; font-weight: 700; }
+	.dots { display: block; padding-left: 18px; list-style: disc; margin: 8px 0; }
+	.debrief { margin-top: 28px; padding-top: 16px; border-top: 3px solid var(--app-fg); display: grid; gap: 8px; }
+	fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+	legend { padding: 0; font-weight: 600; margin-bottom: 4px; }
+	fieldset label { display: flex; gap: 6px; align-items: center; min-height: 44px; }
+	fieldset input { width: 20px; height: 20px; min-height: 0; }
+	textarea { width: 100%; padding: 10px 12px; font: inherit; border: 2px solid var(--app-fg); border-radius: 4px; }
 	h1 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; }
 	.net { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 12px; margin: 12px 0; background: var(--st-open-bg); color: var(--st-open-ink); border-left: 4px solid currentColor; font-size: 0.92rem; }
 	.net.off { background: var(--st-queue-bg); color: var(--st-queue-ink); }

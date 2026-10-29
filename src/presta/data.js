@@ -38,3 +38,17 @@ export function roster(id) {
 	const presents = Object.fromEntries(inscrits.slice(0, deja).map((p) => [p.code, true]));
 	return (cache[id] = { inscrits, file, presents });
 }
+
+// Numéro de la permanence du pôle animation, affiché au prestataire et à l'entrée (fictif).
+export const PERMA = { label: 'Perma animation', tel: '+41 79 000 00 00' };
+
+// Fiche prestataire vue par le comité à l'entrée (fictive, saisie dans le backoffice).
+export function prestaInfo(activity) {
+	const h = hash(activity.id);
+	return {
+		contact: ['Yuki Tanaka', 'Marc Rochat', 'Sakura Imai', 'Julie Favre'][h % 4],
+		tel: `+41 78 ${String(100 + (h % 900))} ${String(10 + (h % 89))} ${String(10 + ((h >> 3) % 89))}`,
+		contrat: ['Matériel fourni par le prestataire', `Jusqu'à ${1 + (h % 4)} spectateurs en plus acceptés`, 'Salle rendue rangée 10 min après la fin'],
+		infos: h % 2 ? 'Prévoir une rallonge électrique à l\'entrée de la salle.' : ''
+	};
+}

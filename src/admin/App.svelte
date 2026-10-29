@@ -12,6 +12,8 @@
 	import Reviews from './Reviews.svelte';
 	import Stats from './Stats.svelte';
 	import Journal from './Journal.svelte';
+	import Notify from './Notify.svelte';
+	import Feedback from './Feedback.svelte';
 
 	const NAV = [
 		['dashboard', 'Tableau de bord', 'dashboard'],
@@ -19,11 +21,13 @@
 		['import', 'Import du programme', 'import'],
 		['lottery', 'Réglages loterie', 'sliders'],
 		['providers', 'Prestataires', 'users'],
+		['notify', 'Notifications visiteurs', 'bell'],
 		['reviews', 'Avis des visiteurs', 'message'],
+		['feedback', 'Retours terrain', 'flag'],
 		['stats', 'Statistiques', 'chart'],
 		['journal', 'Journal', 'journal']
 	];
-	const PAGES = { dashboard: Dashboard, activities: Activities, activity: ActivityEdit, session: Session, import: Import, lottery: Lottery, providers: Providers, reviews: Reviews, stats: Stats, journal: Journal };
+	const PAGES = { dashboard: Dashboard, activities: Activities, activity: ActivityEdit, session: Session, import: Import, lottery: Lottery, providers: Providers, reviews: Reviews, notify: Notify, feedback: Feedback, stats: Stats, journal: Journal };
 	const PARENT = { activity: 'activities', session: 'activities' };
 
 	let menu = $state(false);

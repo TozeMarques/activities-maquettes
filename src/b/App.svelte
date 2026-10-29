@@ -5,6 +5,7 @@
 	import Tickets from './Tickets.svelte';
 	import RegisterDialog from './RegisterDialog.svelte';
 	import DemoPanel from '../shared/DemoPanel.svelte';
+	import Notifications from '../shared/Notifications.svelte';
 	import { app } from '../shared/store.svelte.js';
 	import { LOGO } from '../shared/data.js';
 	import { ui } from './ui.svelte.js';
@@ -30,6 +31,7 @@
 				</a>
 			{/each}
 		</nav>
+		<Notifications />
 		<label class="lang"><span class="sr">Langue</span><select><option>FR</option><option>EN</option></select></label>
 	</div>
 </header>

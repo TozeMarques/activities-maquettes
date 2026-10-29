@@ -17,7 +17,14 @@ export const adm = $state({
 	toast: null,
 	acts,
 	rosters,
-	providers: PROVIDERS.map((p) => ({ ...p, token: p.noLink ? null : token() })),
+	providers: PROVIDERS.map((p, i) => ({
+		...p, token: p.noLink ? null : token(),
+		tel: `+41 78 ${String(200 + i * 37).slice(0, 3)} ${String(10 + i * 3)} ${String(40 + i)}`,
+		contract: "Matériel fourni par le prestataire.\nJusqu'à 2 spectateurs en plus acceptés.",
+		infos: i % 3 ? '' : 'Prévoir une rallonge électrique.'
+	})),
+	perma: '+41 79 000 00 00',
+	sent: [{ at: 'sam 10:45', to: 'Tous les visiteurs', title: 'Vestiaire', text: 'Le vestiaire du bâtiment CO est plein : utilisez celui du SG.', reach: 1240 }],
 	journal: [...JOURNAL],
 	imports: [...IMPORTS],
 	settings: { ...DEFAULT_SETTINGS }

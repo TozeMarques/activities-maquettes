@@ -1,6 +1,8 @@
 <script>
 	import { sessionById } from '../shared/data.js';
 	import { app, activeReg, addTicket } from '../shared/store.svelte.js';
+	import ShopLogin from '../shared/ShopLogin.svelte';
+	import TicketQR from '../shared/TicketQR.svelte';
 
 	let mode = $state('scan');
 	let name = $state('');
@@ -35,8 +37,9 @@
 		<li class="card">
 			<span class="code">N° {t.code}</span>
 			<div>
-				<p>{t.name}, {t.age} ans</p>
+				<p>{t.name}, {t.age} ans{t.main ? ' · moi' : ''}</p>
 				<p class="meta">{status(t)}</p>
+				<TicketQR ticket={t} />
 			</div>
 		</li>
 	{:else}
@@ -44,7 +47,9 @@
 	{/each}
 </ul>
 
-<h2 class="title add-title">Ajouter un billet</h2>
+<div class="login"><ShopLogin /></div>
+
+<h2 class="title add-title">Ou ajouter un billet à la main</h2>
 <p class="meta">Vous pouvez aussi ajouter les billets de vos accompagnants (groupe de 6 maximum). Les inscriptions ne sont possibles qu'une fois le billet scanné à l'entrée du festival.</p>
 <div class="modes" role="tablist">
 	<button class="btn-secondary" role="tab" aria-selected={mode === 'scan'} onclick={() => (mode = 'scan')}>Scanner le QR</button>
@@ -75,14 +80,15 @@
 	<label class="field">Âge<input class="input" type="number" min="0" max="120" inputmode="numeric" bind:value={age} /></label>
 	{#if error}<p class="meta" role="alert">{error}</p>{/if}
 	{#if mode === 'scan'}
-		<button class="btn" disabled={scanning} onclick={simulate}>Simuler un scan</button>
+		<button class="btn-secondary" disabled={scanning} onclick={simulate}>Simuler un scan</button>
 	{:else}
-		<button class="btn" onclick={() => add(false)}>Ajouter le billet</button>
+		<button class="btn-secondary" onclick={() => add(false)}>Ajouter le billet</button>
 	{/if}
 </div>
 
 <style>
 	.page-title { margin: var(--space-4) 0; }
+	.login { margin-top: var(--space-6); }
 	.add-title { margin: var(--space-6) 0 var(--space-2); }
 	.list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
 	.list li.card { display: flex; gap: var(--space-4); align-items: center; padding: var(--space-3) var(--space-4); }

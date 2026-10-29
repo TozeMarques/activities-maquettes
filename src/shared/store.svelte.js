@@ -6,6 +6,9 @@ export const app = $state({
 	tickets: structuredClone(scenarios.libre.tickets),
 	regs: structuredClone(scenarios.libre.regs),
 	favs: [],
+	account: null,
+	read: [],
+	prefs: { draw: true, fav: true, remind: true, queue: true, email: true, push: false },
 	route: location.hash.slice(1) || '/'
 });
 
@@ -54,3 +57,35 @@ export function addTicket(name, age) {
 	const n = app.tickets.length + 1;
 	app.tickets.push({ id: 't' + Date.now(), code: String(4820 + n + 10), name: name || `Billet ${n}`, age: +age || 18, scanned: true });
 }
+
+// Compte Japan Impact (facultatif) : les billets achetés sur le shop sont déjà liés au compte.
+export const SHOP_TICKETS = [
+	{ code: '4821', name: 'Léa', age: 24, scanned: true },
+	{ code: '4822', name: '', age: 9, scanned: true },
+	{ code: '4823', name: '', age: 16, scanned: false },
+	{ code: '4824', name: '', age: 31, scanned: true, takenBy: 'un autre appareil' }
+];
+
+export function login() {
+	app.account = { email: 'lea.m@example.ch' };
+}
+export function logout() {
+	app.account = null;
+}
+export function importShop(list) {
+	for (const t of list) {
+		if (app.tickets.some((x) => x.code === t.code)) continue;
+		app.tickets.push({ id: 't' + t.code, code: t.code, name: t.name || `Billet ${t.code}`, age: +t.age, scanned: t.scanned, main: t.main });
+	}
+}
+
+// Auto-check-in : le visiteur scanne le QR affiché à l'entrée de la salle.
+export function selfCheckin(reg) {
+	reg.state = 'checkedin';
+	reg.selfAt = '11:21';
+}
+
+// Notifications : dérivées de l'état (inscriptions, favoris) + messages de l'organisation.
+export const ORG_MESSAGES = [
+	{ id: 'org1', at: '10:45', title: "Message de l'organisation", text: 'Le vestiaire du bâtiment CO est plein : utilisez celui du SG.' }
+];

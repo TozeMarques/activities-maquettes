@@ -37,7 +37,10 @@
 	</div>
 </div>
 
-<label class="field search"><span>Rechercher</span><input type="search" bind:value={q} /></label>
+<div class="row top">
+	<label class="field search"><span>Rechercher</span><input type="search" bind:value={q} /></label>
+	<label class="field perma"><span>Numéro de la perma animation</span><input type="text" bind:value={adm.perma} /><small>Affiché aux prestataires et sur l'écran de check-in.</small></label>
+</div>
 
 <ul class="list">
 	{#each list as p (p.id)}
@@ -46,6 +49,14 @@
 				<b>{p.name}</b>
 				<span class="small muted">{p.contact}</span>
 				<span class="small">{p.acts.map((id) => actById(id)?.title).filter(Boolean).join(' · ')}</span>
+				<details>
+					<summary class="small">Fiche : téléphone, contrat, infos</summary>
+					<div class="sheet">
+						<label class="field"><span>Téléphone</span><input type="text" bind:value={p.tel} /></label>
+						<label class="field"><span>Points du contrat</span><textarea rows="3" bind:value={p.contract}></textarea><small>Visible par le comité à l'entrée, pas par le prestataire.</small></label>
+						<label class="field"><span>Infos diverses</span><textarea rows="2" bind:value={p.infos}></textarea><small>Visible par le prestataire et à l'entrée.</small></label>
+					</div>
+				</details>
 			</div>
 			<div class="link">
 				{#if p.token}
@@ -73,7 +84,11 @@
 </Confirm>
 
 <style>
-	.search { max-width: 360px; margin-bottom: 12px; }
+	.top { align-items: start; gap: 16px; margin-bottom: 12px; }
+	.search { max-width: 360px; flex: 1; }
+	.perma { max-width: 280px; flex: 1; }
+	details summary { cursor: pointer; color: var(--color-secondary); font-weight: 600; min-height: 32px; display: flex; align-items: center; }
+	.sheet { display: grid; gap: 10px; padding: 8px 0; }
 	.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 	.list li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) 220px; gap: 12px 20px; align-items: center; }
 	.who { display: grid; gap: 2px; min-width: 0; }

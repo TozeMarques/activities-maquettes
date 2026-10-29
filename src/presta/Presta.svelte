@@ -4,6 +4,9 @@
 	import { pres, setPresent, countPresent } from './state.svelte.js';
 	import Tag from './Tag.svelte';
 	import Icon from './Icon.svelte';
+	import Perma from './Perma.svelte';
+
+	let retour = $state(false);
 
 	let checkin = $state(false);
 	let jour = $state(NOW.day);
@@ -26,6 +29,9 @@
 	<h1>{PRESTA.nom}</h1>
 	<p style="margin:4px 0 0">Festival Japan Impact, 13 et 14 février 2027</p>
 </header>
+
+<Perma />
+<p class="note"><b>Infos du pôle animation</b>Déchargement par l'entrée nord dès 8:30. Une rallonge vous attend en salle.</p>
 
 <div class="opt">
 	<span id="opt-l">Mode de la maquette</span>
@@ -122,7 +128,24 @@
 	</article>
 {/each}
 
+<section class="retour">
+	<h2>Votre retour</h2>
+	{#if retour}
+		<p class="note ok"><b>Merci</b>Votre retour est transmis au pôle animation. Il reste interne.</p>
+	{:else}
+		<p class="hint">Facultatif. Lu par le pôle animation pour préparer l'édition suivante.</p>
+		<label for="r1">Sur vos séances (affluence, salle, horaires)</label>
+		<textarea id="r1" rows="3"></textarea>
+		<label for="r2">Sur cette page et les listes</label>
+		<textarea id="r2" rows="2"></textarea>
+		<button class="btn dark" onclick={() => (retour = true)}>Envoyer</button>
+	{/if}
+</section>
+
 <style>
+	.retour { margin-top: 28px; display: grid; gap: 8px; }
+	.retour label { font-weight: 600; font-size: 0.9rem; margin-top: 4px; }
+	.retour textarea { width: 100%; padding: 10px 12px; font: inherit; border: 2px solid var(--app-fg); border-radius: 4px; }
 	header { margin-top: 8px; }
 	.opt { margin: 16px 0 12px; font-size: 0.85rem; color: var(--color-gray-700); }
 	.todo { margin: 20px 0; padding: 14px 16px; background: #fff; border: 1px solid var(--color-gray-200); border-top: 4px solid var(--color-primary); }

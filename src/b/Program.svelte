@@ -1,5 +1,6 @@
 <script>
 	import Tag from '../shared/Tag.svelte';
+	import SelfCheckin from '../shared/SelfCheckin.svelte';
 	import Frieze from './Frieze.svelte';
 	import Row from './Row.svelte';
 	import { app, cancelReg } from '../shared/store.svelte.js';
@@ -37,7 +38,8 @@
 				<Tag reg={r} />
 				{#if note(r)}<span class="meta">{note(r)}</span>{/if}
 				{#if r.state === 'lottery' || r.state === 'queue'}<Frieze {s} />{/if}
-				{#if r.state === 'checkedin'}
+				<SelfCheckin reg={r} room={s.room} />
+				{#if r.state === 'checkedin' && !r.selfAt}
 					{#if avis[s.id]}<span class="meta">Merci pour votre avis.</span>
 					{:else}
 						<details>

@@ -1,6 +1,8 @@
 <script>
 	import { app, go } from '../shared/store.svelte.js';
 	import Tag from '../shared/Tag.svelte';
+	import SelfCheckin from '../shared/SelfCheckin.svelte';
+	import TicketQR from '../shared/TicketQR.svelte';
 	import { ticketInfo } from './lib.js';
 
 	let { ticket } = $props();
@@ -15,12 +17,14 @@
 	<div class="main">
 		<div class="head">
 			<h3 class="title">{ticket.name}</h3>
-			<span class="meta">{ticket.age} ans</span>
+			<span class="meta">{ticket.age} ans{ticket.main ? ' · moi' : ''}</span>
 			{#if info.reg}<Tag reg={info.reg} />{/if}
 		</div>
 		<p>{info.line}</p>
 		<p class="meta">{info.todo}</p>
+		{#if info.reg}<SelfCheckin reg={info.reg} room={info.s.room} />{/if}
 		{#if others.length}<p class="meta">Groupe avec {others.join(', ')}</p>{/if}
+		<TicketQR {ticket} />
 		{#if info.cta}<button class="btn-secondary" onclick={() => go('/catalogue')}>Voir les activités</button>{/if}
 		{#if info.review}
 			{#if sent}

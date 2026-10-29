@@ -3,12 +3,13 @@
 	import TicketCard from './TicketCard.svelte';
 	import AddTicket from './AddTicket.svelte';
 	import Open from './Open.svelte';
+	import ShopLogin from '../shared/ShopLogin.svelte';
 
 	let adding = $state(false);
 	const steps = [
-		['Ajoute ton billet', 'Scanne son QR code ou saisis son numéro. Donne un prénom et un âge. Ajoute aussi ceux de tes accompagnants.'],
+		['Ajoute ton billet', 'Connecte-toi au compte du shop, ou scanne son QR code. Ajoute aussi ceux de tes accompagnants.'],
 		["Fais-le scanner à l'entrée", "Aucune inscription n'est possible avant ce passage à l'entrée du festival, et rien le vendredi soir."],
-		['Inscris-toi', 'Choisis une activité ouverte. Pas de compte : ton billet suffit.']
+		['Inscris-toi', 'Choisis une activité ouverte. Le compte est facultatif : ton billet suffit.']
 	];
 </script>
 
@@ -21,6 +22,8 @@
 				<li><span class="num">{i + 1}</span><div><h2 class="title">{t}</h2><p class="meta">{d}</p></div></li>
 			{/each}
 		</ol>
+		<ShopLogin />
+		<h2 class="title">Ou ajouter un billet à la main</h2>
 		<AddTicket />
 	</section>
 {:else}
@@ -29,7 +32,7 @@
 			<h1 class="page-title">Mes billets</h1>
 			<button class="btn-secondary" onclick={() => (adding = !adding)} aria-expanded={adding}>{adding ? 'Fermer' : 'Ajouter un billet'}</button>
 		</div>
-		{#if adding}<AddTicket onadded={() => (adding = false)} />{/if}
+		{#if adding}<ShopLogin onadded={() => (adding = false)} /><AddTicket onadded={() => (adding = false)} />{/if}
 		<div class="list">
 			{#each app.tickets as t (t.id)}<TicketCard ticket={t} />{/each}
 		</div>

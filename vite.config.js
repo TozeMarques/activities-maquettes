@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 // Une page par maquette : /a/, /b/, /c/, /admin/, /presta/
-const pages = ['a', 'b', 'c', 'admin', 'presta'];
+const pages = ['a', 'b', 'c', 'admin', 'presta', 'mail'];
 
 export default defineConfig({
 	plugins: [svelte()],

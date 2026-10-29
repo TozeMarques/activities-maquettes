@@ -1,5 +1,6 @@
 <script>
 	import DemoPanel from '../shared/DemoPanel.svelte';
+	import Notifications from '../shared/Notifications.svelte';
 	import { LOGO } from '../shared/data.js';
 	import { app, ACTIVE } from '../shared/store.svelte.js';
 	import Program from './Program.svelte';
@@ -25,6 +26,7 @@
 	<div class="top">
 		<a href="#/" class="logo"><img src={LOGO} alt="Japan Impact" height="32" /></a>
 		<span class="ttl">Activités 2027</span>
+		<Notifications />
 		<select class="input" aria-label="Langue"><option>FR</option><option>EN</option></select>
 	</div>
 	<nav aria-label="Navigation principale">

@@ -2,6 +2,7 @@
 	import { app } from '../shared/store.svelte.js';
 	import { LOGO } from '../shared/data.js';
 	import DemoPanel from '../shared/DemoPanel.svelte';
+	import Notifications from '../shared/Notifications.svelte';
 	import Wallet from './Wallet.svelte';
 	import Catalog from './Catalog.svelte';
 	import Activity from './Activity.svelte';
@@ -18,6 +19,7 @@
 			<a href="#/" aria-current={page === 'pass' ? 'page' : undefined}>Mes billets</a>
 			<a href="#/catalogue" aria-current={page === 'catalogue' || page === 'activite' ? 'page' : undefined}>Activités</a>
 		</nav>
+		<Notifications />
 		<label class="lang"><span class="sr">Langue</span><select><option>FR</option><option>EN</option></select></label>
 	</div>
 </header>

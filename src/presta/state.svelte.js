@@ -14,3 +14,9 @@ export function setPresent(id, code, on) {
 	if (on) pres[id][code] = '11:20';
 	else delete pres[id][code];
 }
+
+// Personnes entrées en plus, sans inscription (additional_people), par créneau.
+export const extra = $state({});
+
+// Présences pointées par le visiteur lui-même (scan du QR de la salle) plutôt que par le staff.
+export const selfScan = (code) => +code % 3 === 0;
