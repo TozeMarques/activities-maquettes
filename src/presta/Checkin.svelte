@@ -1,7 +1,7 @@
 <script>
 	import { days, NOW, sessionById } from '../shared/data.js';
 	import { roster, prestaInfo } from './data.js';
-	import { pres, setPresent, countPresent, extra, selfScan } from './state.svelte.js';
+	import { pres, setPresent, countPresent, extra, selfScan, demo } from './state.svelte.js';
 	import Perma from './Perma.svelte';
 	import Icon from './Icon.svelte';
 
@@ -12,7 +12,7 @@
 	let id = $state(seances.find((s) => s.phase === 'started')?.id ?? seances[0].id);
 	let onglet = $state('inscrits');
 	let q = $state('');
-	let enLigne = $state(true);
+	const enLigne = $derived(demo.enLigne);
 	let attente = $state([]); // actions faites hors ligne, pas encore synchronisées
 	let scan = $state(false);
 	let resultat = $state(null);
@@ -35,10 +35,16 @@
 		setPresent(id, code, on);
 		if (!enLigne) attente.push({ nom, on, session: id });
 	}
-	function sync() {
-		enLigne = true;
-		attente = [];
-	}
+	// Retour du réseau : les actions en attente partent
+	$effect(() => { if (demo.enLigne) attente = []; });
+	// Scan simulé depuis le bouton « Variantes »
+	$effect(() => {
+		if (!demo.scan) return;
+		const t = demo.scan;
+		demo.scan = null;
+		scan = true;
+		simuler(t);
+	});
 
 	function simuler(type) {
 		const absent = (p) => !pres[id][p.code];
@@ -83,11 +89,6 @@
 		{#if enLigne}En ligne, tout est synchronisé.
 		{:else}<b>Hors ligne.</b> {attente.length} action{attente.length > 1 ? 's' : ''} en attente, envoyée{attente.length > 1 ? 's' : ''} au retour du réseau.{/if}
 	</span>
-	{#if enLigne}
-		<button class="btn small" onclick={() => (enLigne = false)}>Simuler une coupure</button>
-	{:else}
-		<button class="btn small dark" onclick={sync}>Reconnecter</button>
-	{/if}
 </div>
 
 <label class="lab" for="seance">Séance ({days.find((d) => d.id === NOW.day).label})</label>
@@ -127,14 +128,6 @@
 		<div class="vf" aria-label="Viseur de caméra simulé">
 			<i class="c a"></i><i class="c b"></i><i class="c c2"></i><i class="c d"></i><i class="line"></i>
 			<span>Placez le QR dans le cadre</span>
-		</div>
-		<p class="lab">Maquette : simuler le résultat d'un scan</p>
-		<div class="sim">
-			<button class="btn" onclick={() => simuler('inscrit')}>Billet inscrit</button>
-			<button class="btn" onclick={() => simuler('file')}>En file d'attente</button>
-			<button class="btn" onclick={() => simuler('inconnu')}>Pas inscrit</button>
-			<button class="btn" onclick={() => simuler('autre')}>Mauvaise séance</button>
-			<button class="btn" onclick={() => simuler('deja')}>Déjà passé</button>
 		</div>
 		{#if resultat}
 			<div class="note res {resultat.type}" role="status">
@@ -234,7 +227,6 @@
 	.net { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 12px; margin: 12px 0; background: var(--st-open-bg); color: var(--st-open-ink); border-left: 4px solid currentColor; font-size: 0.92rem; }
 	.net.off { background: var(--st-queue-bg); color: var(--st-queue-ink); }
 	.net span { flex: 1; min-width: 12em; }
-	.btn.small { min-height: 44px; font-size: 0.85rem; padding: 0 12px; }
 	.lab { display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-secondary); margin: 16px 0 6px; }
 	select, input { width: 100%; min-height: 52px; padding: 0 12px; font: inherit; font-size: 1rem; border: 2px solid var(--app-fg); border-radius: 4px; background: #fff; color: var(--app-fg); }
 	.frozen { display: flex; gap: 8px; align-items: center; font-size: 0.85rem; color: var(--color-gray-700); margin: 8px 0 0; }
@@ -253,7 +245,6 @@
 	.line { position: absolute; left: calc(50% - 70px); width: 140px; height: 2px; background: var(--color-primary); animation: sw 1.8s ease-in-out infinite alternate; }
 	@keyframes sw { from { top: 40px; } to { top: 150px; } }
 	@media (prefers-reduced-motion: reduce) { .line { animation: none; top: 90px; } }
-	.sim { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 	.res { margin-top: 12px; }
 	.acts { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 	.tabs { display: grid; grid-template-columns: 1fr 1fr; margin: 16px 0 8px; border-bottom: 3px solid var(--app-fg); }

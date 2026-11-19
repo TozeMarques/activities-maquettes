@@ -3,9 +3,12 @@
 	import { min, nowMin, titleOf } from './lib.js';
 	import { app } from '../shared/store.svelte.js';
 	import { NOW } from '../shared/data.js';
-	let { sessions, day } = $props();
+	// compact (maquette D, téléphone) : grille dézoomée pour voir plus d'heures et de salles à la fois, ouverte sur « maintenant »
+	let { sessions, day, compact = false } = $props();
 
-	const T0 = 9.5 * 60, T1 = 21 * 60, PX = 2, LANE = 64;
+	const T0 = 9.5 * 60, T1 = 21 * 60;
+	const PX = $derived(compact ? 1.25 : 2), LANE = $derived(compact ? 46 : 64), ROOM = $derived(compact ? 68 : 110);
+	const toNow = (el) => { if (compact && day === NOW.day) el.scrollLeft = x(nowMin) - 30; };
 	const hours = Array.from({ length: 12 }, (_, i) => 10 + i);
 	const x = (t) => (t - T0) * PX;
 
@@ -31,8 +34,8 @@
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
-<div class="scroll card" role="region" aria-label="Grille horaire, défilement horizontal" tabindex="0">
-	<div class="grid" style="width: {110 + x(T1)}px">
+<div class="scroll card" class:compact style="--room: {ROOM}px" {@attach toNow} role="region" aria-label="Grille horaire, défilement horizontal" tabindex="0">
+	<div class="grid" style="width: {ROOM + x(T1)}px">
 		<div class="head meta">
 			<span class="corner">Salle</span>
 			<div class="axis">
@@ -51,14 +54,14 @@
 							title="{titleOf(s)} · {s.start}–{s.end}"
 						>
 							<span class="name">{titleOf(s)}</span>
-							<span class="state"><Tag session={s} />{#if app.favs.includes(s.activity.id)}<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-label="Favori"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" /></svg>{/if}</span>
+							<span class="state"><Tag session={s} />{#if app.favs.includes(s.id) || app.favs.includes(s.activity.id)}<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-label="Favori"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" /></svg>{/if}</span>
 						</a>
 					{/each}
 				</div>
 			</div>
 		{/each}
 		{#if day === NOW.day}
-			<div class="now" style="left: {110 + x(nowMin)}px"><span class="meta">Maintenant {NOW.time}</span></div>
+			<div class="now" style="left: {ROOM + x(nowMin)}px"><span class="meta">Maintenant {NOW.time}</span></div>
 		{/if}
 	</div>
 </div>
@@ -67,7 +70,7 @@
 	.scroll { overflow: auto; max-height: 80vh; }
 	.grid { position: relative; }
 	.head { display: flex; position: sticky; top: 0; z-index: 4; background: var(--surface); border-bottom: 1px solid var(--line); height: 32px; }
-	.corner, .room { width: 110px; flex: none; position: sticky; left: 0; z-index: 3; background: var(--surface); border-right: 1px solid var(--line); padding: var(--space-2); box-sizing: border-box; }
+	.corner, .room { width: var(--room); flex: none; position: sticky; left: 0; z-index: 3; background: var(--surface); border-right: 1px solid var(--line); padding: var(--space-2); box-sizing: border-box; }
 	.corner { z-index: 5; }
 	.axis { position: relative; flex: 1; }
 	.axis span { position: absolute; top: var(--space-2); transform: translateX(4px); font-variant-numeric: tabular-nums; }
@@ -81,5 +84,11 @@
 	.name { font-size: var(--fs-sm); font-weight: 600; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 	.state { display: flex; align-items: center; gap: var(--space-1); overflow: hidden; }
 	.now { position: absolute; top: 0; bottom: 0; width: 0; border-left: 1px solid var(--text); z-index: 6; pointer-events: none; }
+	/* version dézoomée : texte plus petit, salles abrégées, une seule ligne d'info */
+	.compact .room, .compact .corner { padding: var(--space-1) var(--space-2); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; }
+	.compact .blk { padding: 0 var(--space-1); gap: 2px; }
+	.compact .name { font-size: 0.75rem; }
+	.compact .state :global(.tag) { font-size: 0.6875rem; padding: 0 6px; }
+	.compact .axis span { font-size: 0.75rem; }
 	.now span { position: absolute; top: 36px; left: var(--space-1); background: var(--surface); padding: 0 var(--space-1); white-space: nowrap; }
 </style>

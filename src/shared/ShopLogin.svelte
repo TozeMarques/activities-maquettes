@@ -29,7 +29,7 @@
 {#if step === 'pick'}
 	<section class="card box">
 		<h2 class="title">Billets de votre compte</h2>
-		<p class="meta">Connecté : {app.account.email}. Cochez les billets de votre groupe et donnez-leur un prénom. Un billet décoché reste sur votre compte : la personne qui l'utilise peut l'ajouter de son côté.</p>
+		<p class="meta">Connecté : {app.account.email}. Cochez les billets de votre groupe et donnez-leur un prénom. Un billet décoché reste sur votre compte : la personne qui l'utilise peut l'ajouter de son côté. Les billets ajoutés à la main restent.</p>
 		<ul>
 			{#each picks as p (p.code)}
 				<li class:off={p.takenBy || p.have}>
@@ -52,7 +52,7 @@
 {:else}
 	<section class="card box">
 		<h2 class="title">Billet acheté en ligne ?</h2>
-		<p class="meta">Connectez-vous avec le compte du shop Japan Impact : vos billets s'ajoutent tout seuls, sans les scanner. Facultatif.</p>
+		<p class="meta">Connectez-vous avec le compte du shop Japan Impact : vos billets s'ajoutent tout seuls, sans les scanner. Facultatif.{#if app.tickets.length}{' '}Les {app.tickets.length} billet{app.tickets.length > 1 ? 's' : ''} déjà ajouté{app.tickets.length > 1 ? 's' : ''} ici {app.tickets.length > 1 ? 'sont gardés' : 'est gardé'}.{/if}</p>
 		<button class="btn" disabled={step === 'redirect'} onclick={start}>{step === 'redirect' ? 'Connexion au shop…' : 'Se connecter'}</button>
 	</section>
 {/if}

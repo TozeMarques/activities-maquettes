@@ -1,10 +1,13 @@
 <script>
 	import Tag from '../shared/Tag.svelte';
-	import { app, blocker, register, go } from '../shared/store.svelte.js';
+	import { app, blocker, register, go, activeReg } from '../shared/store.svelte.js';
+	import Leave from '../shared/Leave.svelte';
 	import { days, phaseInfo } from '../shared/data.js';
 	import { ui } from './ui.svelte.js';
 	import { titleOf } from './lib.js';
 
+	// canLeave : propose de quitter l'autre activité qui bloque le billet (maquette D)
+	let { after = '/programme', canLeave = false } = $props();
 	let dlg;
 	let picked = $state([]);
 	const s = $derived(ui.reg);
@@ -32,7 +35,7 @@
 		register(picked, s);
 		ui.toast = s.phase === 'lottery' ? 'Vous participez au tirage. Résultat à l’heure du tirage.' : s.phase === 'queue' ? "Vous êtes en file d'attente (pas une place garantie)." : 'Inscription confirmée.';
 		ui.reg = null;
-		go('/programme');
+		go(after);
 	}
 </script>
 
@@ -49,14 +52,19 @@
 					<legend class="meta">Billets à inscrire (6 maximum)</legend>
 					{#each app.tickets as t (t.id)}
 						{@const why = blocker(t, s)}
+						{@const other = canLeave && why ? activeReg(t.id) : null}
 						<label class:muted={why}>
 							<input type="checkbox" value={t.id} bind:group={picked} disabled={!!why} />
 							<span>{t.name} · {t.age} ans{#if why}<span class="meta">{why}</span>{/if}</span>
 						</label>
+						{#if other}<div class="leave"><Leave reg={other} label="Libérer ce billet (quitter l'autre activité)" /></div>{/if}
 					{/each}
 				</fieldset>
 				{#if picked.length > 1 && s.phase === 'lottery'}
-					<p class="meta">Groupe de {picked.length} : tous ou personne. Si le tirage ne peut pas placer tout le groupe, personne n'est pris.</p>
+					<div class="group" role="note">
+						<p><strong>Groupe de {picked.length} : tous ou personne.</strong></p>
+						<p>Le tirage prend tout le groupe ensemble, ou personne. Plus le groupe est grand, plus c'est difficile. Si vous acceptez d'y aller séparément, inscrivez chaque billet à part.</p>
+					</div>
 				{/if}
 				{#if over}<p class="meta">Pas assez de places pour {picked.length} billets (max {cap}).</p>{/if}
 				<button class="btn btn-block" disabled={!picked.length || over}>{label}</button>
@@ -79,5 +87,7 @@
 	label { display: flex; gap: var(--space-3); align-items: flex-start; min-height: 44px; align-items: center; }
 	input[type='checkbox'] { width: 22px; height: 22px; accent-color: var(--text); flex: none; }
 	label span { display: grid; }
+	.group { display: grid; gap: var(--space-1); width: 100%; padding: var(--space-3); border-left: 4px solid var(--text); background: var(--st-lottery-bg); border-radius: 0 var(--radius) var(--radius) 0; }
+	.leave { padding-left: 34px; margin-top: -6px; }
 	form .link { min-height: 44px; align-self: center; justify-self: center; }
 </style>

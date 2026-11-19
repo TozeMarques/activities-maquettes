@@ -8,4 +8,4 @@
 	const [k, label] = $derived(L[phase]);
 </script>
 
-<span class="tag" style="--ink: var(--st-{k}-ink); --bg: var(--st-{k}-bg)">{label}</span>
+<span class="tag" data-tone={k}>{label}</span>

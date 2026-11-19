@@ -20,3 +20,7 @@ export const extra = $state({});
 
 // Présences pointées par le visiteur lui-même (scan du QR de la salle) plutôt que par le staff.
 export const selfScan = (code) => +code % 3 === 0;
+
+// Réglages de la maquette, dans le bouton « Variantes » (hors de la page pour mieux la voir telle quelle)
+// scan : résultat de scan à simuler, lu puis remis à null par le check-in
+export const demo = $state({ vue: 'presta', checkin: false, enLigne: true, scan: null });

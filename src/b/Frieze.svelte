@@ -31,7 +31,7 @@
 		<div class="track">{#if pos >= 0}<i style="left: {(pos / 3) * 100}%"></i>{/if}</div>
 		<ol class="meta">
 			{#each steps as [name, h], i}
-				<li class:cur={i === cur}>{name} {h}</li>
+				<li class:cur={i === cur}><span>{name}</span> <strong>{h}</strong></li>
 			{/each}
 		</ol>
 		<p class="meta">{text} {countdown(s)}</p>
@@ -43,5 +43,8 @@
 	.track { position: relative; height: 1px; background: var(--line); margin: var(--space-2) 12.5%; }
 	i { position: absolute; top: -4px; width: 9px; height: 9px; margin-left: -4px; border-radius: 50%; background: var(--text); }
 	ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; font-variant-numeric: tabular-nums; }
+	li { display: grid; line-height: 1.3; min-width: 0; }
+	li span { font-size: 0.75rem; }
+	li strong { font-weight: 600; }
 	li.cur { color: var(--text); }
 </style>

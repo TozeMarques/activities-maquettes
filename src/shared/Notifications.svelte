@@ -21,9 +21,10 @@
 			const [type, title, text] = r.selfAt ? [null, 'Présence confirmée', () => `Check-in fait à ${r.selfAt}. Bonne activité !`] : REG[r.state];
 			return { id: r.session + r.state, at: '11:15', type, title: `${title} · ${s.activity.title}`, text: text(s, r) };
 		}),
+		// favori = une activité (A, B, C) ou une séance précise (D)
 		...app.favs.flatMap((id) => {
-			const a = activities.find((x) => x.id === id);
-			const s = a?.sessions.find((x) => ['lottery', 'fcfs', 'soon'].includes(x.phase));
+			const a = activities.find((x) => x.id === id) ?? sessionById[id]?.activity;
+			const s = [sessionById[id] ?? a?.sessions].flat().find((x) => x && ['lottery', 'fcfs', 'soon'].includes(x.phase));
 			if (!s) return [];
 			const text = s.phase === 'soon' ? `Inscriptions à ${s.opensAt} pour la séance de ${s.start}.` : `Inscriptions ouvertes pour la séance de ${s.start}.`;
 			return [{ id: 'fav' + s.id, at: '11:05', type: 'fav', title: `Favori · ${a.title}`, text }];

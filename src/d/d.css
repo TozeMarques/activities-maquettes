@@ -1,0 +1,55 @@
+/* Mise en page commune à la maquette D ; le reste vient de ui.css */
+a { color: inherit; }
+ul { list-style: none; margin: 0; padding: 0; }
+.thumb { object-fit: cover; background: var(--line); border-radius: var(--radius); flex: none; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.tabs { display: flex; gap: var(--space-4); }
+.tabs button { min-height: 44px; padding: 0; border: 0; border-bottom: 2px solid transparent; background: none; font: inherit; font-weight: 600; color: var(--text-muted); }
+.tabs button[aria-pressed='true'] { color: var(--text); border-bottom-color: var(--text); }
+.dim { opacity: 0.65; }
+
+/* ---- DA site 2027 (Canva « DA Site 2027 », thème clair) ----
+   Polices : Rubik Glitch (marque), Zen Dots (titres), Calibri → Carlito (texte, même métrique).
+   Couleurs : fond #fff6f6, encre #29215c, sous-titres #5a4ea9 ; états pastel en pilule avec puce. */
+:root {
+	--app-bg: #fff6f6;
+	--app-fg: #29215c;
+	--text-muted: #5a4ea9;
+	--line: #d8d2ea;
+	--surface: #fffaf4;
+	--accent: #29215c;
+	--radius: 12px;
+	--font-base: 'Carlito', 'Calibri', 'Segoe UI', sans-serif;
+	--font-brand: 'Rubik Glitch', var(--font-display);
+	--fs-md: 1.0625rem;
+	/* surfaces d'état (cartes grisées, alertes, confirmations) */
+	--st-closed-bg: #ece8f1;
+	--st-closed-ink: #5a4ea9;
+	--st-queue-bg: #ffe3e3;
+	--st-queue-ink: #29215c;
+	--st-cancel-bg: #ffe0e0;
+	--st-cancel-ink: #d11f1f;
+	--st-open-bg: #d9f7e8;
+	--st-open-ink: #29215c;
+}
+.card { border-color: #29215c; }
+.page-title { color: var(--text); padding-bottom: var(--space-2); border-bottom: 2px solid var(--text); }
+main h2.title { font-family: var(--font-display); font-weight: 400; color: var(--text-muted); }
+
+.btn, .btn-secondary { font-weight: 700; }
+.btn { background: var(--accent); color: #fffaf4; border-radius: 8px; }
+.btn::before { content: '→'; }
+.btn-secondary { border: 2px solid var(--text); border-radius: 999px; }
+/* S'inscrire : le rose « Acheter » de la DA, la seule action rose du site */
+.btn-cta { background: #ff80e7; color: #29215c; border-radius: 999px; box-shadow: 0 2px 0 #29215c; }
+.alert { border-left-color: #ff8181; }
+
+.tag { border-left: 0; border-radius: 999px; padding: 1px 10px; text-transform: none; letter-spacing: 0; font-size: 0.8125rem; font-weight: 700; color: #29215c; background: #e4dff0; }
+.tag::before { content: '• '; }
+.tag[data-tone] { color: #29215c; }
+.tag[data-tone='open'] { background: #b0f1d3; }
+.tag[data-tone='soon'] { background: #797dff; }
+.tag[data-tone='closed'] { background: #b563ff; }
+.tag[data-tone='lottery'] { background: #ffc6f2; }
+.tag[data-tone='queue'] { background: #ffc1c1; }
+.tag[data-tone='cancel'] { background: transparent; box-shadow: inset 0 0 0 1.5px #29215c; text-decoration: line-through; }

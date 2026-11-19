@@ -49,7 +49,7 @@
 			<Icon name={menu ? 'close' : 'menu'} size={22} /><span class="sr">Menu</span>
 		</button>
 		<a class="brand" href="#dashboard">
-			<img src="../logo-ji.webp" alt="" width="36" height="36" />
+			<img src="../logo-ji.webp" alt="" width="57" height="36" />
 			<span><b>Activities</b><small>Comité et admin</small></span>
 		</a>
 		<p class="clock num" title="Heure fictive de la démo">{days.find((d) => d.id === NOW.day).short} {nowLabel()}</p>
@@ -85,8 +85,9 @@
 	.shell { display: grid; grid-template-columns: 240px minmax(0, 1fr); grid-template-rows: auto 1fr; min-height: 100vh; }
 	.top { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 8px 20px; background: #fff; border-bottom: 1px solid var(--color-gray-200); box-shadow: 0 2px 4px 0 var(--color-primary-light); position: sticky; top: 0; z-index: 20; }
 	.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-	.brand b { font-family: var(--font-display); font-weight: 400; font-size: 1.125rem; display: block; line-height: 1.1; color: var(--color-tertiary); }
-	.brand small { display: block; font-size: 0.75rem; color: var(--color-primary); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+	.brand img { height: 36px; width: auto; }
+	.brand b { font-family: var(--font-brand); font-weight: 400; font-size: 1.125rem; display: block; line-height: 1.1; color: var(--color-tertiary); }
+	.brand small { display: block; font-size: 0.75rem; color: var(--color-secondary); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 	.clock { margin-left: auto; font-weight: 600; font-size: 0.875rem; padding: 4px 8px; border: 1px solid var(--color-gray-200); border-radius: var(--radius-md); }
 	.burger { display: none; width: 44px; height: 44px; border: 0; background: none; align-items: center; justify-content: center; margin-left: -8px; }
 	.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }

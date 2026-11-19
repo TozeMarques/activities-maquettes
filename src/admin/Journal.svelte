@@ -59,7 +59,7 @@
 	.t-checkin { color: var(--st-soon-ink); }
 	.t-import { color: var(--st-queue-ink); }
 	.t-inscription { color: var(--st-open-ink); }
-	.t-admin { color: var(--color-primary); }
+	.t-admin { color: var(--st-cancel-ink); }
 	a { color: var(--color-secondary); }
 	@media (max-width: 640px) {
 		thead { display: none; }

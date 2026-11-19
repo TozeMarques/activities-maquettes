@@ -1,14 +1,14 @@
 <script>
 	import { activities, days, NOW } from '../shared/data.js';
 	import { PRESTA, roster } from './data.js';
-	import { pres, setPresent, countPresent } from './state.svelte.js';
+	import { pres, setPresent, countPresent, demo } from './state.svelte.js';
 	import Tag from './Tag.svelte';
 	import Icon from './Icon.svelte';
 	import Perma from './Perma.svelte';
 
 	let retour = $state(false);
 
-	let checkin = $state(false);
+	const checkin = $derived(demo.checkin);
 	let jour = $state(NOW.day);
 	let ouverts = $state({});
 
@@ -32,14 +32,6 @@
 
 <Perma />
 <p class="note"><b>Infos du pôle animation</b>Déchargement par l'entrée nord dès 8:30. Une rallonge vous attend en salle.</p>
-
-<div class="opt">
-	<span id="opt-l">Mode de la maquette</span>
-	<div class="switch" role="group" aria-labelledby="opt-l" style="margin:6px 0 0">
-		<button aria-pressed={!checkin} onclick={() => (checkin = false)}>Lecture seule</button>
-		<button aria-pressed={checkin} onclick={() => (checkin = true)}>Check-in activé</button>
-	</div>
-</div>
 
 {#if checkin}
 	<p class="note ok"><b>Le check-in est activé pour vous</b>Cochez les personnes présentes à mesure qu'elles entrent. Le comité voit vos cochages.</p>
@@ -147,7 +139,6 @@
 	.retour label { font-weight: 600; font-size: 0.9rem; margin-top: 4px; }
 	.retour textarea { width: 100%; padding: 10px 12px; font: inherit; border: 2px solid var(--app-fg); border-radius: 4px; }
 	header { margin-top: 8px; }
-	.opt { margin: 16px 0 12px; font-size: 0.85rem; color: var(--color-gray-700); }
 	.todo { margin: 20px 0; padding: 14px 16px; background: #fff; border: 1px solid var(--color-gray-200); border-top: 4px solid var(--color-primary); }
 	.todo ol { margin: 8px 0 0; padding-left: 20px; }
 	.todo li + li { margin-top: 6px; }
